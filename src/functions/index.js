@@ -1,0 +1,19 @@
+// // Create and Deploy Your First Cloud Functions
+// // https://firebase.google.com/docs/functions/write-firebase-functions
+//
+// exports.helloWorld = functions.https.onRequest((request, response) => {
+//  response.send("Hello from Firebase!");
+// });
+
+// See: https://codeburst.io/next-js-on-cloud-functions-for-firebase-with-firebase-hosting-7911465298f2
+const functions = require("firebase-functions")
+const next = require("next")
+
+var dev = process.env.NODE_ENV !== "production"
+var app = next({ dev, conf: { distDir: "next" } })
+var handle = app.getRequestHandler()
+
+exports.next = functions.https.onRequest((req, res) => {
+  console.log("File: " + req.originalUrl) // log the page.js file that is being requested
+  return app.prepare().then(() => handle(req, res))
+})
