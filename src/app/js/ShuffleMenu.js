@@ -3,39 +3,11 @@ import Shuffle from 'shufflejs';
 
 
 class ShuffleMenu extends React.Component {
-    constructor() {
+    constructor(props) {
         super();
         this.categoryButtons = '.filter-group li a';
         this.state = {
-            'menu': 
-                [
-                    {
-                        'menu-group-name': 'Category 1',
-                        'menu-items': [
-                            { 'item-name' : 'Category 1 - item 1'},
-                            { 'item-name' : 'Category 1 - item 2'},
-                            { 'item-name' : 'Category 1 - item 3'},
-                        ]
-                    },
-                    {
-                        'menu-group-name': 'Category 2',
-                        'menu-items': [
-                            { 'item-name' : 'Category 2 - item 1'},
-                            { 'item-name' : 'Category 2 - item 2'},
-                            { 'item-name' : 'Category 2 - item 3'},
-                        ]
-                    },
-                    {
-                        'menu-group-name': 'Category 3',
-                        'menu-items': [
-                            { 'item-name' : 'Category 3 - item 1'},
-                            { 'item-name' : 'Category 3 - item 2'},
-                            { 'item-name' : 'Category 3 - item 3'},
-                        ]
-                    },
-
-                ]
-            
+            'menu': props.data.menu
         };
     }
     
@@ -52,7 +24,6 @@ class ShuffleMenu extends React.Component {
 
         // Initialize shufflejs
         const grid = document.querySelector('#shuffle-grid');
-        // console.log(this);
         this.shuffle = new Shuffle(grid, {
             itemSelector: '.category',
             sizer: '.sizer',
@@ -60,7 +31,6 @@ class ShuffleMenu extends React.Component {
     }
 
     setItemActiveState(element) {
-        // console.log(document.querySelectorAll(this.categoryButtons));
         document.querySelectorAll(this.categoryButtons).forEach((ele)=>{
            ele.classList.remove("active");
         });
@@ -124,8 +94,6 @@ class MenuGroup extends React.Component {
                                     <div className="menu-item__price col-2">$23</div>
                                 </div>
                             </div>
-
-                        {/* { item["item-name"] } */}
                         </li>
                         );
                     })}
