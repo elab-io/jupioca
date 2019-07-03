@@ -1,7 +1,7 @@
 {
   "menu": [
     {
-      "menu-group-name": "Category x",
+      "menu-group-name": "Category 1",
       "menu-items": [
         {
           "item-name": "Category 1 - item 1"
@@ -39,6 +39,20 @@
         },
         {
           "item-name": "Category 3 - item 3"
+        }
+      ]
+    },
+    {
+      "menu-group-name": "Category 4",
+      "menu-items": [
+        {
+          "item-name": "Category 4 - item 1"
+        },
+        {
+          "item-name": "Category 4 - item 2"
+        },
+        {
+          "item-name": "Category 4 - item 3"
         }
       ]
     }
