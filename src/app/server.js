@@ -19,9 +19,9 @@ app.prepare().then(() => {
   })
 
   // Serve the item webpage with next.js as the renderer
-  server.get('/item', (req, res) => {
+  server.get('/menu', (req, res) => {
     const itemData = api.getItem()
-    app.render(req, res, '/item', { itemData })
+    app.render(req, res, '/menu', { itemData })
   })
 
   // When rendering client-side, we will request the same data from this route
