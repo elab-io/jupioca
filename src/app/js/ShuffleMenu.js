@@ -18,7 +18,6 @@ class ShuffleMenu extends React.Component {
                 button.addEventListener('click', (e)=>{
                     this.setItemActiveState(e.target);
                     this.shuffle.filter(e.target.dataset.filter); 
-
                 });
             });
 
@@ -36,7 +35,7 @@ class ShuffleMenu extends React.Component {
         let defaultGroup = this.state.menu.filter((group)=> group["default"] == true )[0];
         
         if (defaultGroup.length == 0) defaultGroup = this.state.menu[0];
-
+        
         document.querySelectorAll(this.categoryButtons).forEach((button)=>{
             if (button.dataset['filter'] == defaultGroup["menu-group-name"]) 
                 this.setItemActiveState(button);
@@ -100,14 +99,14 @@ class MenuGroup extends React.Component {
                         <li key={i} className="menu-item col-lg-6 col-sm-12">
                             <div className="menu-item__wrapper">
                                 <div className="row">
-                                    <div className="menu-item__image col-3">
-                                        <img src="https://simpleqode.bitbucket.io/touche/assets/img/31.jpg" alt="Food" />
+                                    <div className="menu-item__image col-sm-12 col-md-3">
+                                        <img src={ item["image"] } alt="Food & Drink" />
                                     </div>
-                                    <div className="menu-item__text_container col-7">
+                                    <div className="menu-item__text_container col-sm-12  col-md-7">
                                         <div class="menu-item__title">{ item["title"] }</div>
                                         <div class="menu-item__description">{ item["description"] }</div>
                                     </div>
-                                    <div className="menu-item__price col-2">{ item["price"] }</div>:
+                                    <div className="menu-item__price  col-sm-12 col-md-2">{ item["price"] }</div>
                                 </div>
                             </div>
                         </li>
