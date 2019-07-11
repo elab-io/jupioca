@@ -1,0 +1,60 @@
+{
+  "menu": [
+    {
+      "menu-group-name": "Category x",
+      "menu-items": [
+        {
+          "item-name": "Category 1 - item 1"
+        },
+        {
+          "item-name": "Category 1 - item 2"
+        },
+        {
+          "item-name": "Category 1 - item 3"
+        }
+      ]
+    },
+    {
+      "menu-group-name": "Category 2",
+      "menu-items": [
+        {
+          "item-name": "Category 2 - item 1"
+        },
+        {
+          "item-name": "Category 2 - item 2"
+        },
+        {
+          "item-name": "Category 2 - item 3"
+        }
+      ]
+    },
+    {
+      "menu-group-name": "Category 3",
+      "menu-items": [
+        {
+          "item-name": "Category 3 - item 1"
+        },
+        {
+          "item-name": "Category 3 - item 2"
+        },
+        {
+          "item-name": "Category 3 - item 3"
+        }
+      ]
+    },
+    {
+      "menu-group-name": "Category 4",
+      "menu-items": [
+        {
+          "item-name": "Category 4 - item 1"
+        },
+        {
+          "item-name": "Category 4 - item 2"
+        },
+        {
+          "item-name": "Category 4 - item 3"
+        }
+      ]
+    }
+  ]
+}

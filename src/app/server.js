@@ -20,6 +20,7 @@ app.prepare().then(() => {
 
   // Serve the item webpage with next.js as the renderer
   server.get('/menu', (req, res) => {
+    console.log('Render menu page')
     const itemData = api.getItem()
     app.render(req, res, '/menu', { itemData })
   })
@@ -32,6 +33,7 @@ app.prepare().then(() => {
 
   // Fall-back on other next.js assets.
   server.get('*', (req, res) => {
+    console.log('render other')
     return handle(req, res)
   })
 
