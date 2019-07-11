@@ -1,3 +1,38 @@
+## Set up
+```
+yarn install // Fetch packages and dependence
+yarn next // Run app dev mode
+
+
+// To deploy to GCP
+yarn deploy
+
+
+// For css development
+cd static
+gulp watch
+
+```
+
+
+To run app independently without cloud function, comment out `disDir` in the next.config.js
+
+```
+module.exports = {
+    exportPathMap: function () {
+      return {
+        '/': { page: '/' },
+        '/menu': { page: '/menu' },
+      }
+    },
+    
+   // distDir: '../functions/next'
+  }
+
+```
+
+
+
 
 
 ## Reference:
