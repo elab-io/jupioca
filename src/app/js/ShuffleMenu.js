@@ -27,7 +27,23 @@ class ShuffleMenu extends React.Component {
         this.shuffle = new Shuffle(grid, {
             itemSelector: '.category',
             sizer: '.sizer',
+            group: this.setDefaultGroup()
           }); 
+    }
+
+    setDefaultGroup() {
+
+        let defaultGroup = this.state.menu.filter((group)=> group["default"] == true )[0];
+        
+        if (defaultGroup.length == 0) defaultGroup = this.state.menu[0];
+
+        document.querySelectorAll(this.categoryButtons).forEach((button)=>{
+            if (button.dataset['filter'] == defaultGroup["menu-group-name"]) 
+                this.setItemActiveState(button);
+        });
+
+
+        return defaultGroup["menu-group-name"];
     }
 
     setItemActiveState(element) {
@@ -50,7 +66,7 @@ class ShuffleMenu extends React.Component {
                     { this.state.menu.map((menu, i)=>{
                         return <li className="nav-item" key={i}><a className="nav-link" data-filter={menu["menu-group-name"]}>{menu["menu-group-name"]}</a></li>
                     }) }
-                    <li className="nav-item"><a className="nav-link" data-filter="all">Reset</a></li>
+                    {/* <li className="nav-item"><a className="nav-link" data-filter="all">Reset</a></li> */}
                     </ul>
                 </div>
 
@@ -88,10 +104,10 @@ class MenuGroup extends React.Component {
                                         <img src="https://simpleqode.bitbucket.io/touche/assets/img/31.jpg" alt="Food" />
                                     </div>
                                     <div className="menu-item__text_container col-7">
-                                        <div class="menu-item__title">Fusce id ante ut arcu</div>
-                                        <div class="menu-item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</div>
+                                        <div class="menu-item__title">{ item["title"] }</div>
+                                        <div class="menu-item__description">{ item["description"] }</div>
                                     </div>
-                                    <div className="menu-item__price col-2">$23</div>
+                                    <div className="menu-item__price col-2">{ item["price"] }</div>:
                                 </div>
                             </div>
                         </li>
