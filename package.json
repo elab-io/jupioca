@@ -14,6 +14,7 @@
     "deploy": "cp -r src/app/static/css/* src/public/static/css/ && cp -r src/app/static/js/* src/public/static/js/ && cp -r src/app/operations src/functions/  && cp -r src/app/data src/functions/ && firebase deploy",
     "build-all": "yarn build-next && yarn build-firebase",
     "build-next": "cd \"src/app\" && yarn && yarn build",
-    "build-firebase": "cd \"src/functions\" && yarn"
+    "build-firebase": "cd \"src/functions\" && yarn",
+    "build-css": "cd \"src/app/static\" && yarn && gulp watch"
   }
 }
