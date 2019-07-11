@@ -1,58 +1,167 @@
 {
   "menu": [
     {
-      "menu-group-name": "Category x",
+      "menu-group-name": "MAINS",
       "menu-items": [
         {
-          "item-name": "Category 1 - item 1"
+          "title": "Lorem ipsum dolor sit amet",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$15"
         },
         {
-          "item-name": "Category 1 - item 2"
+          "title": "Fusce id ante ut arcu",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$25"
         },
         {
-          "item-name": "Category 1 - item 3"
+          "title": "Fusce sed dolor eget tortor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$60"
+        },
+        {
+          "title": "Lorem ipsum dolor sit amet",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$15"
+        },
+        {
+          "title": "Fusce id ante ut arcu",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$25"
+        },
+        {
+          "title": "Fusce sed dolor eget tortor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$60"
         }
       ]
     },
     {
-      "menu-group-name": "Category 2",
+      "menu-group-name": "LUNCH",
+      "default": true,
       "menu-items": [
         {
-          "item-name": "Category 2 - item 1"
+          "title": "Lorem ipsum dolor sit amet",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$15"
         },
         {
-          "item-name": "Category 2 - item 2"
+          "title": "Fusce id ante ut arcu",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$25"
         },
         {
-          "item-name": "Category 2 - item 3"
+          "title": "Fusce sed dolor eget tortor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$60"
+        },
+        {
+          "title": "Lorem ipsum dolor sit amet",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$15"
+        },
+        {
+          "title": "Fusce id ante ut arcu",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$25"
+        },
+        {
+          "title": "Fusce sed dolor eget tortor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$60"
         }
       ]
     },
     {
-      "menu-group-name": "Category 3",
+      "menu-group-name": "DINNER",
       "menu-items": [
         {
-          "item-name": "Category 3 - item 1"
+          "title": "Lorem ipsum dolor sit amet",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$15"
         },
         {
-          "item-name": "Category 3 - item 2"
+          "title": "Fusce id ante ut arcu",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$25"
         },
         {
-          "item-name": "Category 3 - item 3"
+          "title": "Fusce sed dolor eget tortor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$60"
+        },
+        {
+          "title": "Lorem ipsum dolor sit amet",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$15"
+        },
+        {
+          "title": "Fusce id ante ut arcu",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$25"
+        },
+        {
+          "title": "Fusce sed dolor eget tortor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$60"
         }
       ]
     },
     {
-      "menu-group-name": "Category 4",
+      "menu-group-name": "DRINKS",
       "menu-items": [
         {
-          "item-name": "Category 4 - item 1"
+          "title": "Lorem ipsum dolor sit amet",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$15"
         },
         {
-          "item-name": "Category 4 - item 2"
+          "title": "Fusce id ante ut arcu",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$25"
         },
         {
-          "item-name": "Category 4 - item 3"
+          "title": "Fusce sed dolor eget tortor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$60"
+        },
+        {
+          "title": "Lorem ipsum dolor sit amet",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$15"
+        },
+        {
+          "title": "Fusce id ante ut arcu",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$25"
+        },
+        {
+          "title": "Fusce sed dolor eget tortor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
+          "image": "https://simpleqode.bitbucket.io/touche/assets/img/31.jpg",
+          "price": "$60"
         }
       ]
     }

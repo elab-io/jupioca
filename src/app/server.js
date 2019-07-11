@@ -16,7 +16,7 @@ app.prepare().then(() => {
 
   // Set up home page as a simple render of the page.
   server.get('/', (req, res) => {
-    console.log('Render home page')
+    // console.log('Render home page')
     const itemData = api.getItem()
     return app.render(req, res, '/', { itemData })
   })

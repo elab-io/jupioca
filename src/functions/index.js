@@ -16,8 +16,10 @@ const admin = require('firebase-admin');
 
 const next = require("next")
 
+const compression = require('compression')  
 const api = require('./operations/get-item')
 const express = require('express')
+
 
 var dev = process.env.NODE_ENV !== "production"
 var app = next({ dev, conf: { distDir: "next" } })
@@ -26,6 +28,7 @@ var handle = app.getRequestHandler()
 admin.initializeApp();
 
 var server = express();
+server.use(compression());
 server.get('/', (req, res) => {
 
   app.prepare().then(()=>{

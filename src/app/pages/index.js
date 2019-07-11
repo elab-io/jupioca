@@ -21,6 +21,14 @@ class HomePage extends React.Component {
     
         console.log('getInitialProps called:', isServer ? 'server' : 'client')
 
+        
+            // const res = await fetch('https://raw.githubusercontent.com/elab-io/jupioca/master/src/app/data/item.json', {
+            //   headers: { Accept: 'application/json' }
+            // })
+            // const json = await res.json()
+            // return { data: json }
+
+
         if (isServer) {
             // When being rendered server-side, we have access to our data in query that we put there in routes/item.js,
             // saving us an http call. Note that if we were to try to require('../operations/get-item') here,
@@ -28,7 +36,7 @@ class HomePage extends React.Component {
             return { data: query.itemData }
           } else {
             // On the client, we should fetch the data remotely
-            const res = await fetch('/_data/item', {
+              const res = await fetch('/_data/item', {
               headers: { Accept: 'application/json' }
             })
             const json = await res.json()

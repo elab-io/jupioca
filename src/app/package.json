@@ -26,12 +26,12 @@
     "shufflejs": "^5.2.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "babel-preset-next": "^1.2.0",
     "babelify": "^10.0.0",
-    "browserify": "^16.2.3",
+    "browserify": "^16.3.0",
     "gulp": "^4.0.2",
     "gulp-plumber": "^1.2.1",
     "vinyl-source-stream": "^2.0.0"
