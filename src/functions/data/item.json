@@ -1,8 +1,8 @@
 {
   "menu": [
     {
-      "menu-group-name": "MAINS",
-      "menu-items": [
+      "group-name": "MAINS",
+      "group-items": [
         {
           "title": "Lorem ipsum dolor sit amet",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
@@ -42,9 +42,9 @@
       ]
     },
     {
-      "menu-group-name": "LUNCH",
+      "group-name": "LUNCH",
       "default": true,
-      "menu-items": [
+      "group-items": [
         {
           "title": "Lorem ipsum dolor sit amet",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
@@ -84,8 +84,8 @@
       ]
     },
     {
-      "menu-group-name": "DINNER",
-      "menu-items": [
+      "group-name": "DINNER",
+      "group-items": [
         {
           "title": "Lorem ipsum dolor sit amet",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
@@ -125,8 +125,8 @@
       ]
     },
     {
-      "menu-group-name": "DRINKS",
-      "menu-items": [
+      "group-name": "DRINKS",
+      "group-items": [
         {
           "title": "Lorem ipsum dolor sit amet",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.",
@@ -165,5 +165,80 @@
         }
       ]
     }
+  ],
+  "locations": [
+    {
+      "group-name": "all",
+      "group-items":[]
+    },
+    {
+      "group-name": "Uptown",
+      "group-items": [
+        {
+          "title": "W 86TH ST",
+          "address": "2345 Broadway btw 85th & 86th 10024",
+          "hours": "8:00 AM - 9:00 PM",
+          "phone": "(212) 531-1110"
+        },
+        {
+          "title": "W 86TH ST",
+          "address": "2345 Broadway btw 85th & 86th 10024",
+          "hours": "8:00 AM - 9:00 PM",
+          "phone": "(212) 531-1110"
+        },
+        {
+          "title": "W 86TH ST",
+          "address": "2345 Broadway btw 85th & 86th 10024",
+          "hours": "8:00 AM - 9:00 PM",
+          "phone": "(212) 531-1110"
+        }                
+      ]
+    },
+    {
+      "group-name": "Midtown",
+      "group-items": [
+        {
+          "title": "W 86TH ST",
+          "address": "2345 Broadway btw 85th & 86th 10024",
+          "hours": "8:00 AM - 9:00 PM",
+          "phone": "(212) 531-1110"
+        },
+        {
+          "title": "W 86TH ST",
+          "address": "2345 Broadway btw 85th & 86th 10024",
+          "hours": "8:00 AM - 9:00 PM",
+          "phone": "(212) 531-1110"
+        },
+        {
+          "title": "W 86TH ST",
+          "address": "2345 Broadway btw 85th & 86th 10024",
+          "hours": "8:00 AM - 9:00 PM",
+          "phone": "(212) 531-1110"
+        }                
+      ]
+    },
+    {
+      "group-name": "Downtown",
+      "group-items": [
+        {
+          "title": "W 86TH ST",
+          "address": "2345 Broadway btw 85th & 86th 10024",
+          "hours": "8:00 AM - 9:00 PM",
+          "phone": "(212) 531-1110"
+        },
+        {
+          "title": "W 86TH ST",
+          "address": "2345 Broadway btw 85th & 86th 10024",
+          "hours": "8:00 AM - 9:00 PM",
+          "phone": "(212) 531-1110"
+        },
+        {
+          "title": "W 86TH ST",
+          "address": "2345 Broadway btw 85th & 86th 10024",
+          "hours": "8:00 AM - 9:00 PM",
+          "phone": "(212) 531-1110"
+        }                
+      ]
+    }        
   ]
 }
