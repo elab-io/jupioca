@@ -103,8 +103,8 @@ class MenuGroup extends React.Component {
                                         <img src={ item["image"] } alt="Food & Drink" />
                                     </div>
                                     <div className="menu-item__text_container col-sm-12  col-md-7">
-                                        <div class="menu-item__title">{ item["title"] }</div>
-                                        <div class="menu-item__description">{ item["description"] }</div>
+                                        <div className="menu-item__title">{ item["title"] }</div>
+                                        <div className="menu-item__description">{ item["description"] }</div>
                                     </div>
                                     <div className="menu-item__price  col-sm-12 col-md-2">{ item["price"] }</div>
                                 </div>

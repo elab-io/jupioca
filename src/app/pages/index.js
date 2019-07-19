@@ -9,7 +9,7 @@ import CallToAction from '../components/CallToAction';
 import Contact from '../components/Contact';
 import Franchise from '../components/Franchise';
 import Footer from '../components/Footer';
-import ShuffleMenu from '../js/ShuffleMenu';
+import ShuffleMenu from '../components/ShuffleMenu';
 
 import fetch from 'isomorphic-unfetch';
 
