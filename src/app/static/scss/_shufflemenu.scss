@@ -45,7 +45,7 @@
         padding: 0;
     }
 
-    .menu-item__wrapper {
+    .group-item__wrapper {
         .row {
             display: flex;
             flex-direction: column;
@@ -58,12 +58,12 @@
         padding-bottom: 1rem;
     }
 
-    .menu-item {
+    .group-item {
         margin-top: 1.0rem;
 
     }
 
-    .menu-item__image {
+    .group-item__image {
         display: flex;
         align-items: center;
         img {
@@ -73,17 +73,17 @@
         }
     }
 
-    .menu-item__text_container {
+    .group-item__text_container {
         margin-top: 1.0rem;
     }
 
-    .menu-item__description {
+    .group-item__description {
         margin-top: 1.0rem;
         color: #777;
     } 
 
 
-    .menu-item__price {
+    .group-item__price {
         margin-top: 1.0rem;
     }
 }

@@ -17,7 +17,10 @@ class Navigation extends React.Component {
                     <a class="nav-link js-scroll-trigger" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#services">Menu</a>
+                    <a class="nav-link js-scroll-trigger" href="#shuffle-menu">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#services">Services</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#portfolio">Gallery</a>

@@ -10,6 +10,7 @@ import Contact from '../components/Contact';
 import Franchise from '../components/Franchise';
 import Footer from '../components/Footer';
 import ShuffleMenu from '../components/ShuffleMenu';
+import Location from '../components/Location';
 
 import fetch from 'isomorphic-unfetch';
 
@@ -54,6 +55,7 @@ class HomePage extends React.Component {
             <Portfolio />
             <CallToAction />
             <Contact />
+            <Location data={ this.props.data } />
             <ShuffleMenu data={ this.props.data } />
             <Franchise />
             <Footer />
