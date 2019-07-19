@@ -27,11 +27,22 @@ app.prepare().then(() => {
     app.render(req, res, '/menu', { itemData })
   })
 
+
+
+  server.get('/location', (req, res) => {
+    const itemData = api.getItem()
+    app.render(req, res, '/location', { itemData })
+  })
+
+
   // When rendering client-side, we will request the same data from this route
   server.get('/_data/item', (req, res) => {
     const itemData = api.getItem()
     res.json(itemData)
   })
+
+
+
 
   // Fall-back on other next.js assets.
   server.get('*', (req, res) => {

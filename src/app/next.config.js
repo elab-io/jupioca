@@ -3,6 +3,7 @@ module.exports = {
       return {
         '/': { page: '/' },
         '/menu': { page: '/menu' },
+        '/location': { page: '/location' },
       }
     },
     
