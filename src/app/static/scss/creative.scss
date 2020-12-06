@@ -8,6 +8,27 @@
 @import "./global.scss";
 @import "./navbar.scss";
 @import "./masthead.scss";
-@import "./portfolio.scss";
+@import "./gallery.scss";
 @import "./shufflemenu.scss";
 @import "./location.scss";
+@import "./job.scss";
+@import "./about.scss";
+@import "./default-override.scss";
+
+
+.item img {
+  width: 100%;
+  height: auto
+}
+
+.skip-link {
+	position: absolute;
+	width:1px;
+	height: 1px;
+	overflow: hidden;
+	&:focus {
+	  position: static;
+	  width: auto;
+	  height: auto;
+	}
+}

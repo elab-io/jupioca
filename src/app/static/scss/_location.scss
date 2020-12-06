@@ -1,7 +1,11 @@
-#location {
+#locations {
 
     &.page-section {
         padding: 1rem 0;
+    }
+
+    #shuffle-grid {
+        overflow: visible !important;
     }
 
     ul.filter-group {
@@ -14,6 +18,8 @@
 
     ul.filter-group li {
         position: relative;
+        cursor: pointer;
+
     }
     
     ul.filter-group li a {
@@ -69,9 +75,14 @@
         display: flex;
         align-items: center;
         img {
-            width: 100%;
+            // width: 100%;
             // height: 100%;
-            object-fit: cover;
+            
+            // object-fit: cover;
+            width: 77px;
+            height: 77px;
+            border-radius: 10%;
+            border: 1px solid #3b3b3b;
         }
         
         .location-list__item__icon {
@@ -110,6 +121,7 @@
 
     }
 
+    
     .group-item__text_container {
         margin-top: 1.0rem;
     }
@@ -154,20 +166,91 @@
     }
 
     .group-item__address {
-        margin-top: 1.0rem;
+        margin-top: 0.3rem;
         color: #777;
     } 
 
     .group-item__phone {
-        margin-top: 1.0rem;
+        // margin-top: 1.0rem;
         color: #777;
     } 
 
     .group-item__hours {
-        margin-top: 1.0rem;
+        margin-top: 1rem;
+
+
+            p {
+                margin-bottom: 0.3rem;
+            }
+
+        .btn {
+            width: 100%;
+            text-align: left;
+            color: #777;
+            padding: 0px;
+        }
+
+        div {
+            color: #777;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0px;
+            font-style: italic;
+        }
+
+
     } 
 
     .group-item__price {
         margin-top: 1.0rem;
     }
+
+
+
+    ul.social-links {
+        list-style: none;
+        padding: 0;
+        margin-top: 1em;        
+        margin-bottom: 1em;        
+
+        > li {
+            float: left;
+            a {
+                display: block;
+                font-size: 1.3rem;
+                // color: #777;
+                margin-right: 1.0rem;
+                &:hover {
+                    color: #212529;
+                }
+
+                .popup-gmaps {
+
+                }
+            }
+        }
+    }
+
+    .card {
+        border: none;
+    }
+    .card-header {
+        padding: 0;
+    }
+    .card-body {
+        // padding-left: 0.2rem;
+        padding: 0;
+    }
+
+    .card-header {
+        border: none;
+        background-color: #fff;
+    }
+    .popup-gmaps {
+        // color: #777
+    }
+
+
 }

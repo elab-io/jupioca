@@ -45,12 +45,18 @@ server.get('/', (req, res) => {
     const itemData = api.getItem()
     app.render(req, res, '/location', { itemData })
   })
+
+  server.get('/accessibility', (req, res) => {
+    // const itemData = api.getItem()
+    // app.render(req, res, '/cs', { itemData })
+    app.render(req, res, '/accessibility', { })
+  })
   
   // When rendering client-side, we will request the same data from this route
-  server.get('/_data/item', (req, res) => {
-    const itemData = api.getItem()
-    res.json(itemData)
-  })
+  // server.get('/_data/item', (req, res) => {
+  //   const itemData = api.getItem()
+  //   res.json(itemData)
+  // })
 
   // Fall-back on other next.js assets.
   server.get('*', (req, res) => {

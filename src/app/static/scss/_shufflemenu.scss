@@ -4,6 +4,27 @@
         padding: 1rem 0;
     }
 
+    button.menu-dropdown-button, .dropdown-menu {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        @include media-breakpoint-down(md) {
+            position: relative !important;
+            transform: none !important;            
+        }
+    }
+
+    .dropdown-item {
+        &.active, &:active {
+            color: #fff;
+            background-color: #545b62;
+        }
+    }
+
+    .dropdown-menu {
+        border-radius: 0;
+    }
+
     ul.filter-group {
         display: flex;
         justify-content: center;
@@ -13,6 +34,8 @@
 
     ul.filter-group li {
         position: relative;
+            cursor: pointer;
+          
     }
     
     ul.filter-group li a {
@@ -53,7 +76,7 @@
                 flex-direction: row;
             }
         }
-        // border-bottom: 1px solid #f0f0f0;
+        height: 100%;
         border-bottom: 1px solid #f0f0f0; 
         padding-bottom: 1rem;
     }
@@ -82,8 +105,23 @@
         color: #777;
     } 
 
+    .group-item__calories {
+        margin-top: 0.5rem;
+        color: #777;
+    }
+
 
     .group-item__price {
         margin-top: 1.0rem;
+    }
+
+    .category-image {
+        width: 100%;
+        height: 15rem;
+        background-image: url('/static/img/moge/milkshake.jpg');
+        background-size: cover;
+        background-position: center center;
+        margin-top: 1rem;
+
     }
 }

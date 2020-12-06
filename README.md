@@ -3,16 +3,29 @@
 yarn install // Fetch packages and dependence
 yarn next // Run app dev mode
 
+export to static site
+/website/src/app/yarn next build
+/website/src/app/yarn next export
+The above cmd will generate the contenti inside the out folder
 
 // To deploy to GCP
+yarn build-all
 yarn deploy
 
 
 // For css development
-cd static
+cd jupioca/src/app/static
 gulp watch
 
+yarn build-css
+
 ```
+
+// For firebase
+firebase login
+finrebase init // to set up could function and hosting
+
+or modify .firebaserc to point to your cloud project
 
 
 To run app independently without cloud function, comment out `disDir` in the next.config.js

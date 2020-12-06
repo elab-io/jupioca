@@ -3,9 +3,9 @@ import React from 'react';
 class Footer extends React.Component {
     render() {
         return (
-          <footer class="bg-light py-5">
-          <div class="container">
-            <div class="small text-center text-muted">Copyright &copy; 2019 - Jupioca Inc</div>
+          <footer className="bg-light py-5">
+          <div className="container">
+            <div className="small text-center text-muted">Copyright &copy; 2020 - MOGETEE USA LLC | <a href="/accessibility">Accessibility</a></div>            
           </div>
         </footer>
         ) ;
