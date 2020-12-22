@@ -1,3 +1,16 @@
+## Using Docker command
+```sh
+// Run local development
+docker-composer up dev-site
+
+// rebuild docker image 
+docker build --no-cache -t docker-nextjs .
+
+// ssh into the container
+docker run --rm -it docker-nextjs sh
+```
+
+
 ## Set up
 ```
 yarn install // Fetch packages and dependence
@@ -43,9 +56,6 @@ module.exports = {
   }
 
 ```
-
-
-
 
 
 ## Reference:

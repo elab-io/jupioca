@@ -5,10 +5,10 @@ const CsLayout = (props) => (
   <>
   {/* <div> */}
     <Head>
-    <meta charset="utf-8" />
+    <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     {/* <meta name="author" content="" /> */}
-    {/* <meta itemprop="name" content="愿茶 MÖGE TEE" /> */}
+    {/* <meta itemProp="name" content="愿茶 MÖGE TEE" /> */}
     <meta name="description" content="Moge TEE USA愿茶官网" />
     <meta name="keywords" content="Moge TEE USA愿茶官网" />
      <title>愿茶Moge Tee USA</title>

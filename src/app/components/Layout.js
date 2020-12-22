@@ -6,10 +6,10 @@ const Layout = (props) => (
   <div>
     <Head>
 
-    <meta charset="utf-8" />
+    <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="author" content="" />
-    <meta itemprop="name" content="愿茶 MÖGE TEE" />
+    <meta itemProp="name" content="愿茶 MÖGE TEE" />
     <meta name="description" content="Moge TEE is dedicated to create an unique and innovative beverage with well-balanced and rich flavor to present customers the most natural and fresh taste." />
     <meta name="keywords" content="Bubble tea, fruit tea, tea, dirty milk tea, super parfait, 愿茶美國官网,愿茶, 奶茶加盟" />
      <title>愿茶Moge Tee</title>
@@ -33,7 +33,7 @@ const Layout = (props) => (
     // <link rel="preload" href="/static/css/creative.min.css" rel="stylesheet"/>
 
     </Head>
-    <a tabIndex="0" href="#about" class="skip-link">Skip to main content</a>
+    <a tabIndex="0" href="#about" className="skip-link">Skip to main content</a>
     <div className="main-content">
       {props.children}
     </div>
