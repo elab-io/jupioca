@@ -8,7 +8,7 @@ services:
         working_dir: "/docker"
     environment: 
       WORKING_DIR: "/docker"
-  dev:
+  next:
     ports:
       - "3000:3000"
     volumes:
@@ -16,10 +16,63 @@ services:
     extends:
       service: base
     environment:
-      APP_NAME: jupioca
+      APP_NAME: nextjs
     command: >
         sh -c "
           cd src/app
-          yarn next
+          yarn dev
+        "
+  build:
+    volumes:
+      - .:/docker
+    extends:
+      service: base
+    environment:
+      APP_NAME: nextjs
+    command: >
+        sh -c "
+          cd src/app
+          yarn build
         "
 
+  start:
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/docker
+    extends:
+      service: base
+    environment:
+      APP_NAME: nextjs
+    command: >
+        sh -c "
+          cd src/app
+          yarn build
+        "
+  export:
+    volumes:
+      - .:/docker
+    extends:
+      service: base
+    environment:
+      APP_NAME: nextjs
+    command: >
+        sh -c "
+          cd src/app
+          yarn export
+        "
+  build-css:
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/docker
+    extends:
+      service: base
+    environment:
+      APP_NAME: nextjs
+    command: >
+        sh -c "
+          cd src/app/static
+          yarn
+          ./node_modules/gulp/bin/gulp.js watch
+        "

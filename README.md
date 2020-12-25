@@ -1,7 +1,7 @@
 ## Using Docker command
 ```sh
 // Run local development
-docker-composer up dev-site
+docker-composer up next
 
 // rebuild docker image 
 docker build --no-cache -t docker-nextjs .

@@ -12,9 +12,9 @@ export default class extends Component {
             <a>Back Home</a>
           </Link>
         </div>
-        <h1>{this.props.item.title}</h1>
+        {/* <h1>{this.props.item.title}</h1> */}
         <h2>
-          {this.props.item.subtitle} - {this.props.item.seller}
+          {/* {this.props.item.subtitle} - {this.props.item.seller} */}
         </h2>
       </div>
     )

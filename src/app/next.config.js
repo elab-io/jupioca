@@ -12,6 +12,8 @@ const withCSS = require('@zeit/next-css')
 module.exports = withCSS({
   cssModules: true,
   poweredByHeader: false,
+  // Remove .html extension on export
+  trailingSlash: true,
   exportPathMap: function () {
     return {
       '/': { page: '/' },
