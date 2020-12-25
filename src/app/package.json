@@ -4,13 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "_comment: dev": "node server.js",
-    "dev": "node server.js",
-    "next": "next",
-    "build": "next build",
-    "start": "next start",
+    "dev": "yarn cp-assets && next",
+    "cp-assets": "cp -r template/img template/css template/js template/vendor public/ ",
+    "build": "yarn cp-assets && next build",
     "export": "next build && next export",
-    "now": "now",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -10670,8 +10670,8 @@ button:focus {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("/img/moge/g2.jpg");
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("/img/moge/g2.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("/img/moge/img");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("/img/moge/img");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10900,7 +10900,7 @@ header.masthead h1 {
 #shuffle-menu .category-image {
   width: 100%;
   height: 15rem;
-  background-image: url("/static/img/moge/milkshake.jpg");
+  background-image: url("/img/moge/milkshake.jpg");
   background-size: cover;
   background-position: center center;
   margin-top: 1rem;

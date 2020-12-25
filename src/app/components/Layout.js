@@ -15,11 +15,11 @@ const Layout = (props) => (
      <title>愿茶Moge Tee</title>
 
 
-    <link href="images/favicon.png" rel="shortcut icon" type="image/png" />
+    {/* <link href="images/favicon.png" rel="shortcut icon" type="image/png" />
     <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
     <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-iscon" sizes="72x72" />
     <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
-    <link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
+    <link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" /> */}
               
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'/>

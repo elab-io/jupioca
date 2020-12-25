@@ -22,33 +22,6 @@ services:
           cd src/app
           yarn dev
         "
-  build:
-    volumes:
-      - .:/docker
-    extends:
-      service: base
-    environment:
-      APP_NAME: nextjs
-    command: >
-        sh -c "
-          cd src/app
-          yarn build
-        "
-
-  start:
-    ports:
-      - "3000:3000"
-    volumes:
-      - .:/docker
-    extends:
-      service: base
-    environment:
-      APP_NAME: nextjs
-    command: >
-        sh -c "
-          cd src/app
-          yarn build
-        "
   export:
     volumes:
       - .:/docker

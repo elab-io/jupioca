@@ -13,12 +13,6 @@ import ShuffleMenu from '../components/ShuffleMenu';
 import Location from '../components/Location';
 import Job from '../components/Job';
 
-import fetch from 'isomorphic-unfetch';
-
-
-// import '../static/vendor/fontawesome-free/css/all.css';
-// import '../assets/vendor/magnific-popup/magnific-popup.css';
-// import '../assets/css/creative.min.css'
 
 
 class HomePage extends React.Component {
