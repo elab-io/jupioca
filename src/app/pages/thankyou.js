@@ -28,7 +28,7 @@ class ThankYouPage extends React.Component {
         <div>
           <p>
             <a href="/">
-            <img src="/static/img/moge/logo.png" height="40" alt="company logo" />
+            <img src="/img/moge/logo.png" height="40" alt="company logo" />
             </a>
             </p>
             <h2>Thank you for your interest, we have received your form and we will contact you soon.</h2>

@@ -65,7 +65,7 @@ class ShuffleMenu extends React.Component {
     }
 
     setGroupImage(element) {        
-        // document.querySelector('.category-image').style.backgroundImage="url('/static/img/moge/"+element.dataset.groupid+".jpg'),url('/static/img/moge/milkshake.jpg')";
+        // document.querySelector('.category-image').style.backgroundImage="url('/img/moge/"+element.dataset.groupid+".jpg'),url('/img/moge/milkshake.jpg')";
     }
 
     setDefaultGroup() {
@@ -142,13 +142,13 @@ class ShuffleMenu extends React.Component {
                             </ol>
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img className="d-block w-100" src="https://mogeteeusa.com/static/imgad.jpeg" alt="First slide" />
+                                    <img className="d-block w-100" src="https://mogeteeusa.com/imgad.jpeg" alt="First slide" />
                                 </div>
                                 <div className="carousel-item">
-                                    <img className="d-block w-100" src="https://mogeteeusa.com/static/imgad.jpeg" alt="Second slide" />
+                                    <img className="d-block w-100" src="https://mogeteeusa.com/imgad.jpeg" alt="Second slide" />
                                 </div>
                                 <div className="carousel-item">
-                                    <img className="d-block w-100" src="https://mogeteeusa.com/static/imgad.jpeg" alt="Third slide" />
+                                    <img className="d-block w-100" src="https://mogeteeusa.com/imgad.jpeg" alt="Third slide" />
                                 </div>
                             </div>
                             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

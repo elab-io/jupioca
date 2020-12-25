@@ -16,7 +16,7 @@ class Job extends React.Component {
 
         <div className="jumbotron jumbotron-fluid">
 
-			          <video autoPlay muted loop poster="/static/img/moge/video.jpg" aria-label="video">
+			          <video autoPlay muted loop poster="/img/moge/video.jpg" aria-label="video">
             <source src="" data-src="http://144.202.12.76/mogeVideo.mp4" type="video/mp4" />
           </video>
 

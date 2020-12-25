@@ -47,8 +47,8 @@ class Gallery extends React.Component {
             })}
 
             {/* <div className="col-lg-4 col-sm-6">
-              <a className="gallery-box" href="/static/img/gallery/fullsize/1.jpg" title="Text Here">
-                <img className="img-fluid" src="/static/img/gallery/thumbnails/1.jpg" alt="" />
+              <a className="gallery-box" href="/img/gallery/fullsize/1.jpg" title="Text Here">
+                <img className="img-fluid" src="/img/gallery/thumbnails/1.jpg" alt="" />
                 <div className="gallery-box-caption">
                   <div className="project-category text-white-50">
                     Category
@@ -61,8 +61,8 @@ class Gallery extends React.Component {
             </div>
   
             <div className="col-lg-4 col-sm-6">
-              <a className="gallery-box" href="/static/img/gallery/fullsize/3.jpg">
-                <img className="img-fluid" src="/static/img/gallery/thumbnails/3.jpg" alt="" />
+              <a className="gallery-box" href="/img/gallery/fullsize/3.jpg">
+                <img className="img-fluid" src="/img/gallery/thumbnails/3.jpg" alt="" />
                 <div className="gallery-box-caption">
                   <div className="project-category text-white-50">
                     Category
@@ -74,8 +74,8 @@ class Gallery extends React.Component {
               </a>
             </div>
             <div className="col-lg-4 col-sm-6">
-              <a className="gallery-box" href="/static/img/gallery/fullsize/4.jpg">
-                <img className="img-fluid" src="/static/img/gallery/thumbnails/4.jpg" alt="" />
+              <a className="gallery-box" href="/img/gallery/fullsize/4.jpg">
+                <img className="img-fluid" src="/img/gallery/thumbnails/4.jpg" alt="" />
                 <div className="gallery-box-caption">
                   <div className="project-category text-white-50">
                     Category
@@ -87,8 +87,8 @@ class Gallery extends React.Component {
               </a>
             </div>
             <div className="col-lg-4 col-sm-6">
-              <a className="gallery-box" href="/static/img/gallery/fullsize/5.jpg">
-                <img className="img-fluid" src="/static/img/gallery/thumbnails/5.jpg" alt="" />
+              <a className="gallery-box" href="/img/gallery/fullsize/5.jpg">
+                <img className="img-fluid" src="/img/gallery/thumbnails/5.jpg" alt="" />
                 <div className="gallery-box-caption">
                   <div className="project-category text-white-50">
                     Category
@@ -100,8 +100,8 @@ class Gallery extends React.Component {
               </a>
             </div> */}
             {/* <div className="col-lg-4 col-sm-6">
-              <a className="gallery-box" href="/static/img/gallery/fullsize/6.jpg">
-                <img className="img-fluid" src="/static/img/gallery/thumbnails/6.jpg" alt="" />
+              <a className="gallery-box" href="/img/gallery/fullsize/6.jpg">
+                <img className="img-fluid" src="/img/gallery/thumbnails/6.jpg" alt="" />
                 <div className="gallery-box-caption p-3">
                   <div className="project-category text-white-50">
                     Category
@@ -130,7 +130,7 @@ class GalleryPiece extends React.Component {
     //   "caption": "Great",
     //   "t1": "Category",
     //   "t2": "Project",
-    //   "img": "/static/img/gallery/thumbnails/1.jpg"
+    //   "img": "/img/gallery/thumbnails/1.jpg"
     //           /// "img": "https://via.placeholder.com/650x350.png?text=Test"
     // }
     // console.log("here is the info yy");

@@ -153,10 +153,10 @@ class MenuGroup extends React.Component {
 
                                             {
                                                 item["cs"] ? 
-                                                <img src="/static/img/moge/coming-soon.jpg" height="60" alt="company logo"></img>
+                                                <img src="/img/moge/coming-soon.jpg" height="60" alt="company logo"></img>
 
                                                 : 
-                                                <img src="/static/img/moge/m-logo.jpg" height="60" alt="company logo"></img>
+                                                <img src="/img/moge/m-logo.jpg" height="60" alt="company logo"></img>
 
 
                                             }

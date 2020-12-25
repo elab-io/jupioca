@@ -17,8 +17,8 @@ import fetch from 'isomorphic-unfetch';
 
 
 // import '../static/vendor/fontawesome-free/css/all.css';
-import '../static/vendor/magnific-popup/magnific-popup.css';
-import '../static/css/creative.min.css'
+// import '../assets/vendor/magnific-popup/magnific-popup.css';
+// import '../assets/css/creative.min.css'
 
 
 class HomePage extends React.Component {

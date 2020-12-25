@@ -14,7 +14,6 @@ const Layout = (props) => (
     <meta name="keywords" content="Bubble tea, fruit tea, tea, dirty milk tea, super parfait, 愿茶美國官网,愿茶, 奶茶加盟" />
      <title>愿茶Moge Tee</title>
 
-    // <link  rel="preload" href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
 
     <link href="images/favicon.png" rel="shortcut icon" type="image/png" />
     <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -25,12 +24,8 @@ const Layout = (props) => (
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'/>
 
-    <link rel="icon" href="/static/img/moge/icon-32.png" sizes="32x32" />
-    <link rel="icon" href="/static/img/moge/icon-192.png" sizes="192x192" />
-
-    // <link rel="preload" href="/static/vendor/magnific-popup/magnific-popup.css" rel="stylesheet"/>
-
-    // <link rel="preload" href="/static/css/creative.min.css" rel="stylesheet"/>
+    <link rel="icon" href="/img/moge/icon-32.png" sizes="32x32" />
+    <link rel="icon" href="/img/moge/icon-192.png" sizes="192x192" />
 
     </Head>
     <a tabIndex="0" href="#about" className="skip-link">Skip to main content</a>
@@ -40,13 +35,13 @@ const Layout = (props) => (
   </div>
   
 
-  <script src="/static/vendor/jquery/jquery.min.js"></script>
-  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="/static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-  <script src="/static/js/creative.min.js"></script>
+  <script src="/js/creative.min.js"></script>
 </>
 );
 

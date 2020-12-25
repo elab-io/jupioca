@@ -38,7 +38,7 @@ class AccessibilityPage extends React.Component {
         <div>
           <p>
             <a href="/" style={divStyle}>
-            <img src="/static/img/moge/logo.png" height="80" alt="company logo" />
+            <img src="/img/moge/logo.png" height="80" alt="company logo" />
             </a>
             </p>
             <h1>ACCESSIBILITY</h1>

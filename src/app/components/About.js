@@ -12,7 +12,7 @@ class About extends React.Component {
 
               <div className="row">
                 <div className="col-lg-6 col-md-12 col-sm-12">
-                  <img src="/static/img/moge/about-us.jpg" alt="About Us" />
+                  <img src="/img/moge/about-us.jpg" alt="About Us" />
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12 text-dark about-text">
                 MOGE TEE is dedicated to delivering the finest Bubble Tea in America, using only natural and fresh ingredients to deliver new and fashionable drinks that are extremely rich in flavor for our customers! With over 300 outlets worldwide,  Moge Tee has won the hearts of tea lovers around the world all the way from China,  Japan, Vietnam, Malaysia to Australia, and is now expanding its reach to the United States of America.

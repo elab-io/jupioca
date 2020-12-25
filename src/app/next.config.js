@@ -1,4 +1,4 @@
-const withCSS = require('@zeit/next-css')
+// const withCSS = require('@zeit/next-css')
 
 // module.exports = {
 
@@ -9,8 +9,9 @@ const withCSS = require('@zeit/next-css')
 // }
 
 
-module.exports = withCSS({
+module.exports = {
   cssModules: true,
+  compress: true,
   poweredByHeader: false,
   // Remove .html extension on export
   trailingSlash: true,
@@ -27,4 +28,4 @@ module.exports = withCSS({
 
   // Comment out this, it seems has some conflicts with next-css module.
   // distDir: '../functions/next',  
-})  
+} 
