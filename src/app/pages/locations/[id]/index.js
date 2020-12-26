@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Layout from '../../../components/Layout';
@@ -25,11 +27,102 @@ function Store ({store}) {
   const router = useRouter()
   const { id } = router.query
 
-console.log(store);
+  function UpdateMasterHeadBackground() {    
+    if(store.store_pic) {
+      var master_head = document.getElementsByClassName('masthead')[0];
+      master_head.style.backgroundImage = "url(" + store.store_pic + ")";
+    }
+  }
+
+  function AddOperationInfo() {
+    console.log(store);
+    var about_section = document.getElementById('about');
+    if(about_section) {
+      let hours = Object.keys(store.hours).map((index) => {
+        return (
+          <li key={index}>{index}: {store.hours[index]}</li>
+        )
+      });
+
+      let operate_hours = React.createElement("ul", {className: "hours"}, hours);
+
+
+      var socials = null;
+      if(Object.keys(store.social).length > 0) {
+        let social_list = Object.keys(store.social).map((index) => {
+          return (
+            <li key={index}><a target="_blank" aria-label="Link to social media" href={store.social[index]}><i className={"fab fa-" + index}></i></a></li>
+          )
+        });        
+        socials = React.createElement("ul", {className: "socials-links"}, social_list);
+      } 
+
+
+      const element = (
+        <>
+        <div className="container">
+          <div className="text-dark">
+            <div className="col-12 text-center">
+              <h2 className="text-dark mt-0">About</h2>
+              <hr className="divider dark my-4" />
+
+              <div className="row">
+
+                <div className="col-lg-6 col-md-12 col-sm-12">
+                  <img src="/img/moge/about-us.jpg" alt="About Us" />
+                </div>
+
+                <div className="col-lg-6 col-md-12 col-sm-12 text-dark text-left about-text">
+                  
+                  <div className="storeAddress">
+                    {store.title}<br />
+                    {store.address}<br />
+                    {store.phone}
+                  </div>        
+                  <br /><br />
+                  <div className="hours">
+                    Open Hours:<br />
+                    {operate_hours}
+                  </div>
+
+                  {socials}
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </>
+      );
+
+
+      // about_section.appendChild(operations);
+
+      // var about = ReactDOM.createElement(<p></p>);
+
+      console.log(about_section.innerHTML);
+      ReactDOM.render(
+        element,
+        document.getElementById('about')
+      );
+    }
+
+    
+
+  }
+
+  useEffect(() => {
+    UpdateMasterHeadBackground();
+    AddOperationInfo();
+    return () => {
+      // Clean up the subscription
+      // subscription.unsubscribe();
+    };
+  });
+
   return (
     <>
-        <p>{store.id}</p>
-        <p>{store.title}</p>
         <Layout>
         <Navigation />
         <Masthead />

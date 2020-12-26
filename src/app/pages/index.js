@@ -22,7 +22,7 @@ class HomePage extends React.Component {
             <>
             <Layout>
             <Navigation />
-            <Masthead />
+            <Masthead data={ this.props.data } />
             <About />
             <ShuffleMenu data={ this.props.data } />
             <Location data={ this.props.data } />
