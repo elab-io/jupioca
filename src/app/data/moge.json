@@ -17,7 +17,7 @@
           "description": "Made with fresh lemon and lime (Non Caffeine;  Non-Diary). 附新鲜青柠和黄柠",
           "calories": "97.5",
           "price": "$8.75",
-          "image": "/static/img/menu/c11.jpg"
+          "image": "/img/menu/c11.jpg"
         },
 
         {
@@ -26,7 +26,7 @@
           "description": "Made with fresh orange, lime , lemon , watermelon (Non Caffeine;  Non-Diary). 附上 新鲜西瓜，橙子 ，青柠，黄拧",
           "calories": "58.4",
           "price": "$6.00",
-          "image": "/static/img/menu/c12.jpg"
+          "image": "/img/menu/c12.jpg"
         },
         {
           "title": "Cheese Foam Red Dragon Fruit Tea",
@@ -34,7 +34,7 @@
           "description": "Made with fresh red dragon fruit (Non Caffeine;  Non-Diary). 采用新鲜的红肉火龙果",
           "calories": "58.4",
           "price": "$6.00",
-          "image": "/static/img/menu/c13.jpg"
+          "image": "/img/menu/c13.jpg"
         },
         {
           "title": "Cheese Foam Berry Tea",
@@ -42,7 +42,7 @@
           "description": "Made with fresh raspberry and blueberry (Non Caffeine;  Non-Diary). 采用新鲜的覆盆子和蓝莓",
           "calories": "53-65",
           "price": "$5.50",
-          "image": "/static/img/menu/c14.jpg"
+          "image": "/img/menu/c14.jpg"
         },
         {
           "title": "Cheese Foam Strawberry Tea",
@@ -50,7 +50,7 @@
           "description": "Made with fresh strawberry (Non Caffeine;  Non-Diary). 采用新鲜的草莓",
           "calories": "44-54",
           "price": "$5.50",
-          "image": "/static/img/menu/c15.jpg"
+          "image": "/img/menu/c15.jpg"
         }
       ]
     },
@@ -70,7 +70,7 @@
           "description": "Freshly cooked tea with foam on the top (non-caffeine). 新鲜烹饪的茶配芝士",
           "calories": "48.4",
           "price": "$5.25",
-          "image": "/static/img/menu/c21.jpg"
+          "image": "/img/menu/c21.jpg"
         },
         {
           "title": "Foam Four Season Tea",
@@ -78,7 +78,7 @@
           "description": "Freshly cooked tea with foam on the top (non-caffeine). 新鲜烹饪的茶配芝士",
           "calories": "59.8",
           "price": "$4.75",
-          "image": "/static/img/menu/c22.jpg"
+          "image": "/img/menu/c22.jpg"
         },
         {
           "title": "Foam Rose Oolong Tea",
@@ -86,7 +86,7 @@
           "description": "Freshly cooked tea with foam on the top (non-caffeine). 新鲜烹饪的茶配芝士",
           "calories": "48.4",
           "price": "$4.75",
-          "image": "/static/img/menu/c23.jpg"
+          "image": "/img/menu/c23.jpg"
         },
         {
           "title": "Cheese Earl Grey Tea",
@@ -94,7 +94,7 @@
           "description": "Freshly cooked tea with foam on the top (non-caffeine). 新鲜烹饪的茶配芝士",
           "calories": "48.4",
           "price": "$4.75",
-          "image": "/static/img/menu/c24.jpg"
+          "image": "/img/menu/c24.jpg"
         }
       ]
     },
@@ -114,7 +114,7 @@
           "description": "Freshly made brown sugar with milk tea (non-caffeine)",
           "calories": "460-540",
           "price": "$7.00",
-          "image": "/static/img/menu/c31.jpg"
+          "image": "/img/menu/c31.jpg"
         },
         {
           "title": "Taro Bubble Milk Tea",
@@ -122,7 +122,7 @@
           "description": "Freshly made taro and limited every day (non-caffeine). 采用新鲜的香芋及每日限量",
           "calories": "320-390",
           "price": "$7.00",
-          "image": "/static/img/menu/c32.jpg"
+          "image": "/img/menu/c32.jpg"
         },
         {
           "title": "Purple Yam Bubble Milk Tea",
@@ -130,7 +130,7 @@
           "description": "Freshly made purple yam and limited every day (non-caffeine). 采用新鲜的紫薯及每日限量",
           "calories": "320-390",
           "price": "$7.00",
-          "image": "/static/img/menu/c33.jpg"
+          "image": "/img/menu/c33.jpg"
         }
       ]
     },
@@ -150,7 +150,7 @@
           "description": "Come with bubble and milk tea (non-caffeine)",
           "calories": "299",
           "price": "$0.70",
-          "image": "/static/img/menu/c41.jpg"
+          "image": "/img/menu/c41.jpg"
         },
         {
           "title": "Cheese Milk Black Tea",
@@ -158,7 +158,7 @@
           "description": "With cheese, no bubble (non-caffeine)",
           "calories": "234-364",
           "price": "$0.60",
-          "image": "/static/img/menu/c42.jpg"
+          "image": "/img/menu/c42.jpg"
         },
         {
           "title": "Creme Brulee Milk Tea",
@@ -166,7 +166,7 @@
           "description": "With creme brulee (non-caffeine). 附蛋糕酱",
           "calories": "299-364",
           "price": "$0.60",
-          "image": "/static/img/menu/c43.jpg"
+          "image": "/img/menu/c43.jpg"
         },
         {
           "title": "Oreo Milk Tea",
@@ -174,7 +174,7 @@
           "description": "With creme top and oreo (non-caffeine). 附奶油在上面及奥利奥",
           "calories": "299-364",
           "price": "$0.60",
-          "image": "/static/img/menu/c44.jpg"
+          "image": "/img/menu/c44.jpg"
         },
         {
           "title": "Red Bean Milk Tea",
@@ -182,7 +182,7 @@
           "description": "With red bean (non-caffeine). 附红豆",
           "calories": "299-364",
           "price": "$0.60",
-          "image": "/static/img/menu/c45.jpg"
+          "image": "/img/menu/c45.jpg"
         }
       
       ]
@@ -203,7 +203,7 @@
           "description": "With organic plain yogurt, fresh mango, and waffles (non-caffeine). 采用有机原味酸奶,新鲜芒果和威化饼",
           "calories": "412",
           "price": "$6.50",
-          "image": "/static/img/menu/c51.jpg"
+          "image": "/img/menu/c51.jpg"
         },
         {
           "title": "Super Strawberry Parfait",
@@ -211,7 +211,7 @@
           "description": "with organic plain yogurt ， fresh strawberry and waffles (non-caffeine). 采用有机原味酸奶，新鲜草莓和威化饼",
           "calories": "357",
           "price": "$6.00",
-          "image": "/static/img/menu/c52.jpg"
+          "image": "/img/menu/c52.jpg"
         }
       ]
     },
@@ -231,7 +231,7 @@
           "description": "With fresh dragon fruit and yakult. (Non Caffeine;  Non-Diary)",
           "calories": "105",
           "price": "$6.50",
-          "image": "/static/img/menu/c61.jpg"
+          "image": "/img/menu/c61.jpg"
         },
         {
           "title": "Grapefruit Yakult",
@@ -239,7 +239,7 @@
           "description": "With fresh grapefruit and yakult. (Non Caffeine;  Non-Diary)",
           "calories": "105",
           "price": "$6.00",
-          "image": "/static/img/menu/c62.jpg"
+          "image": "/img/menu/c62.jpg"
         },
         {
           "title": "Orange Yakult",
@@ -247,7 +247,7 @@
           "description": "With fresh orange and yakult. (Non Caffeine;  Non-Diary)",
           "calories": "105",
           "price": "$6.00",
-          "image": "/static/img/menu/c63.jpg"
+          "image": "/img/menu/c63.jpg"
         },
         {
           "title": "Lemon Yakult",
@@ -255,7 +255,7 @@
           "description": "With fresh lemon and yakult. (Non Caffeine;  Non-Diary)",
           "calories": "105",
           "price": "$6.00",
-          "image": "/static/img/menu/c64.jpg"
+          "image": "/img/menu/c64.jpg"
         }
      
       ]
@@ -276,7 +276,7 @@
           "description": "Non Caffeine",
           "calories": "39-91",
           "price": "$6.50",
-          "image": "/static/img/menu/c71.jpg"
+          "image": "/img/menu/c71.jpg"
         },
         {
           "title": "Creme Brulee Uji Matcha",
@@ -284,7 +284,7 @@
           "description": "Non Caffeine",
           "calories": "39-91",
           "price": "$6.00",
-          "image": "/static/img/menu/c72.jpg"
+          "image": "/img/menu/c72.jpg"
         },
         {
           "title": "Uji Matcha",
@@ -292,7 +292,7 @@
           "description": "Uji Matcha",
           "calories": "91-152",
           "price": "$6.00",
-          "image": "/static/img/menu/c73.jpg"
+          "image": "/img/menu/c73.jpg"
         }        
       ]
     },
@@ -312,7 +312,7 @@
           "description": "",
           "calories": "",
           "price": "$6.50",
-          "image": "/static/img/menu/c81.jpg"
+          "image": "/img/menu/c81.jpg"
         },
         {
           "title": "Cheese Oreo Dorayki",
@@ -320,7 +320,7 @@
           "description": "",
           "calories": "",
           "price": "$6.00",
-          "image": "/static/img/menu/c82.png"
+          "image": "/img/menu/c82.png"
         },
         {
           "title": "Taro Dorayaki",
@@ -328,7 +328,7 @@
           "description": "",
           "calories": "",
           "price": "$6.00",
-          "image": "/static/img/menu/c83.jpg"
+          "image": "/img/menu/c83.jpg"
         },
         {
           "title": "Red Bean Dorayaki",
@@ -336,7 +336,7 @@
           "description": "",
           "calories": "",
           "price": "$6.00",
-          "image": "/static/img/menu/c84.jpg"
+          "image": "/img/menu/c84.jpg"
         }                
       ]
     },
@@ -356,7 +356,7 @@
           "description": "Non Caffeine",
           "calories": "122.4-132.6",
           "price": "$6.50",
-          "image": "/static/img/menu/c91.jpg"
+          "image": "/img/menu/c91.jpg"
         },
         {
           "title": "Rose Milk Tea",
@@ -364,7 +364,7 @@
           "description": "Non Caffeine",
           "calories": "122.4",
           "price": "$6.00",
-          "image": "/static/img/menu/c92.jpg"
+          "image": "/img/menu/c92.jpg"
         },
         {
           "title": "Hawaii Milk Tea",
@@ -372,7 +372,7 @@
           "description": "",
           "calories": "122.4",
           "price": "$6.00",
-          "image": "/static/img/menu/c93.jpg"
+          "image": "/img/menu/c93.jpg"
         }              
       ]
     }                      
@@ -400,7 +400,36 @@
             "facebook": "https://www.facebook.com/Mogeteeusa/",
             "instagram": "https://www.instagram.com/mogeteeusa/"
           },
-          "order": "https://www.ubereats.com/en-US/new-york/food-delivery/moge-tee-%E6%84%BF%E8%8C%B6-flushing/K81n8zJKScy7x4r84ajTJg/"
+          "order": "https://www.ubereats.com/en-US/new-york/food-delivery/moge-tee-%E6%84%BF%E8%8C%B6-flushing/K81n8zJKScy7x4r84ajTJg/",
+          "description":"<p>This is custom text for store description.</p><p>Second line description</p>",
+          "menu":[{
+            "id": "C6",
+            "group-name": "Fresh Fruit Yakult",
+            "n2": "鲜果多多",
+            "imgs": [
+              {
+                "img": "jpg"
+              }
+            ],
+            "group-items": [
+              {
+                "title": "Dragon Fruit Yakult",
+                "n2": "火龙果多多",
+                "description": "With fresh dragon fruit and yakult. (Non Caffeine;  Non-Diary)",
+                "calories": "105",
+                "price": "$6.50",
+                "image": "/img/menu/c61.jpg"
+              },
+              {
+                "title": "Grapefruit Yakult",
+                "n2": "西柚多多",
+                "description": "With fresh grapefruit and yakult. (Non Caffeine;  Non-Diary)",
+                "calories": "105",
+                "price": "$6.00",
+                "image": "/img/menu/c62.jpg"
+              } 
+            ]}],
+          "store_pic": "/img/bg-masthead.jpg"
         },
         {
           "id": "002",
@@ -535,13 +564,6 @@
           "social": {
           }
         }        
-        
-
-  
-    
-
-
-
       ]
     },
     {
@@ -722,9 +744,7 @@
           }
         }
       ]
-    },   
-
-    
+    },       
     {
       "group-name": "Georgia",
       "group-items": [
@@ -746,9 +766,6 @@
         }
       ]
     },
-
-
-
     {
       "group-name": "Michigan",
       "group-items": [
@@ -896,12 +913,273 @@
           "hours": {
             "Sun-Thur": "10:30AM - 9:30PM",
             "Fri-Sat": "10:30AM - 10:00PM"
-
           },
           "phone": "(984) 200-9008",
           "cs": true, 
           "social": {
-          }
+          },
+  "menu": [
+    {
+      "id": "C1",
+      "group-name": "Fruit Tea",
+      "n2": "鲜果茶",
+      "default": true,
+      "imgs": [
+        {
+          "img": "classic_fruit_tea.jpg"
+        }
+      ],
+      "group-items": [
+        {
+          "title": "Fresh Lemon Four Season Tea",
+          "n2": "爆柠四季春",
+          "description": "Made with fresh lemon and lime (Non Caffeine;  Non-Diary). 附新鲜青柠和黄柠",
+          "calories": "97.5",
+          "price": "$8.75",
+          "image": "/img/menu/c11.jpg"
+        },
+
+        {
+          "title": "Super Fruit Green Tea",
+          "n2": "超级水果绿",
+          "description": "Made with fresh orange, lime , lemon , watermelon (Non Caffeine;  Non-Diary). 附上 新鲜西瓜，橙子 ，青柠，黄拧",
+          "calories": "58.4",
+          "price": "$6.00",
+          "image": "/img/menu/c12.jpg"
+        },
+        {
+          "title": "Cheese Foam Red Dragon Fruit Tea",
+          "n2": "芝士红肉火龙果茶",
+          "description": "Made with fresh red dragon fruit (Non Caffeine;  Non-Diary). 采用新鲜的红肉火龙果",
+          "calories": "58.4",
+          "price": "$6.00",
+          "image": "/img/menu/c13.jpg"
+        },
+        {
+          "title": "Cheese Foam Berry Tea",
+          "n2": "满杯莓莓茶",
+          "description": "Made with fresh raspberry and blueberry (Non Caffeine;  Non-Diary). 采用新鲜的覆盆子和蓝莓",
+          "calories": "53-65",
+          "price": "$5.50",
+          "image": "/img/menu/c14.jpg"
+        },
+        {
+          "title": "Cheese Foam Strawberry Tea",
+          "n2": "芝士草莓茶",
+          "description": "Made with fresh strawberry (Non Caffeine;  Non-Diary). 采用新鲜的草莓",
+          "calories": "44-54",
+          "price": "$5.50",
+          "image": "/img/menu/c15.jpg"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "group-name": "Cheese Tea",
+      "n2": "脏脏茶",
+      "imgs": [
+        {
+          "img": "dirty-milk3.png"
+        }
+      ],
+      "group-items": [
+        {
+          "title": "Cheese Dongding Oolong Tea",
+          "n2": "芝士冻顶乌龙",
+          "description": "Freshly cooked tea with foam on the top (non-caffeine). 新鲜烹饪的茶配芝士",
+          "calories": "48.4",
+          "price": "$5.25",
+          "image": "/img/menu/c21.jpg"
+        },
+        {
+          "title": "Foam Four Season Tea",
+          "n2": "芝士四季春茶",
+          "description": "Freshly cooked tea with foam on the top (non-caffeine). 新鲜烹饪的茶配芝士",
+          "calories": "59.8",
+          "price": "$4.75",
+          "image": "/img/menu/c22.jpg"
+        },
+        {
+          "title": "Foam Rose Oolong Tea",
+          "n2": "芝士玫瑰乌龙",
+          "description": "Freshly cooked tea with foam on the top (non-caffeine). 新鲜烹饪的茶配芝士",
+          "calories": "48.4",
+          "price": "$4.75",
+          "image": "/img/menu/c23.jpg"
+        },
+        {
+          "title": "Cheese Earl Grey Tea",
+          "n2": "芝士红玉茗茶",
+          "description": "Freshly cooked tea with foam on the top (non-caffeine). 新鲜烹饪的茶配芝士",
+          "calories": "48.4",
+          "price": "$4.75",
+          "image": "/img/menu/c24.jpg"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "group-name": "Dirty Milk Tea",
+      "n2": "任性杯",
+      "imgs": [
+        {
+          "img": "jpg"
+        }
+      ],
+      "group-items": [
+        {
+          "title": "Brown Sugar Bubble Milk Tea",
+          "n2": "黑糖脏脏奶茶款",
+          "description": "Freshly made brown sugar with milk tea (non-caffeine)",
+          "calories": "460-540",
+          "price": "$7.00",
+          "image": "/img/menu/c31.jpg"
+        },
+        {
+          "title": "Taro Bubble Milk Tea",
+          "n2": "香芋脏脏奶茶款",
+          "description": "Freshly made taro and limited every day (non-caffeine). 采用新鲜的香芋及每日限量",
+          "calories": "320-390",
+          "price": "$7.00",
+          "image": "/img/menu/c32.jpg"
+        },
+        {
+          "title": "Purple Yam Bubble Milk Tea",
+          "n2": "紫薯脏脏奶茶款",
+          "description": "Freshly made purple yam and limited every day (non-caffeine). 采用新鲜的紫薯及每日限量",
+          "calories": "320-390",
+          "price": "$7.00",
+          "image": "/img/menu/c33.jpg"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "group-name": "Milk Tea",
+      "n2": "辅料",
+      "imgs": [
+        {
+          "img": "jpg"
+        }
+      ],
+      "group-items": [
+        {
+          "title": "Bubble Milk Tea",
+          "n2": "珍珠奶茶",
+          "description": "Come with bubble and milk tea (non-caffeine)",
+          "calories": "299",
+          "price": "$0.70",
+          "image": "/img/menu/c41.jpg"
+        },
+        {
+          "title": "Cheese Milk Black Tea",
+          "n2": "芝士红玉奶茶",
+          "description": "With cheese, no bubble (non-caffeine)",
+          "calories": "234-364",
+          "price": "$0.60",
+          "image": "/img/menu/c42.jpg"
+        },
+        {
+          "title": "Creme Brulee Milk Tea",
+          "n2": "布蕾蛋糕奶茶",
+          "description": "With creme brulee (non-caffeine). 附蛋糕酱",
+          "calories": "299-364",
+          "price": "$0.60",
+          "image": "/img/menu/c43.jpg"
+        },
+        {
+          "title": "Oreo Milk Tea",
+          "n2": "奥利奥奶茶",
+          "description": "With creme top and oreo (non-caffeine). 附奶油在上面及奥利奥",
+          "calories": "299-364",
+          "price": "$0.60",
+          "image": "/img/menu/c44.jpg"
+        },
+        {
+          "title": "Red Bean Milk Tea",
+          "n2": "红豆奶茶",
+          "description": "With red bean (non-caffeine). 附红豆",
+          "calories": "299-364",
+          "price": "$0.60",
+          "image": "/img/menu/c45.jpg"
+        }
+      
+      ]
+    },
+    {
+      "id": "C5",
+      "group-name": "Super Parfait",
+      "n2": "草莓系列3.0",
+      "imgs": [
+        {
+          "img": "jpg"
+        }
+      ],
+      "group-items": [
+        {
+          "title": "Mango Parfait",
+          "n2": "芒果任性杯",
+          "description": "With organic plain yogurt, fresh mango, and waffles (non-caffeine). 采用有机原味酸奶,新鲜芒果和威化饼",
+          "calories": "412",
+          "price": "$6.50",
+          "image": "/img/menu/c51.jpg"
+        },
+        {
+          "title": "Super Strawberry Parfait",
+          "n2": "任性草莓杯",
+          "description": "with organic plain yogurt ， fresh strawberry and waffles (non-caffeine). 采用有机原味酸奶，新鲜草莓和威化饼",
+          "calories": "357",
+          "price": "$6.00",
+          "image": "/img/menu/c52.jpg"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "group-name": "Fresh Fruit Yakult",
+      "n2": "鲜果多多",
+      "imgs": [
+        {
+          "img": "jpg"
+        }
+      ],
+      "group-items": [
+        {
+          "title": "Dragon Fruit Yakult",
+          "n2": "火龙果多多",
+          "description": "With fresh dragon fruit and yakult. (Non Caffeine;  Non-Diary)",
+          "calories": "105",
+          "price": "$6.50",
+          "image": "/img/menu/c61.jpg"
+        },
+        {
+          "title": "Grapefruit Yakult",
+          "n2": "西柚多多",
+          "description": "With fresh grapefruit and yakult. (Non Caffeine;  Non-Diary)",
+          "calories": "105",
+          "price": "$6.00",
+          "image": "/img/menu/c62.jpg"
+        },
+        {
+          "title": "Orange Yakult",
+          "n2": "鲜橙多多",
+          "description": "With fresh orange and yakult. (Non Caffeine;  Non-Diary)",
+          "calories": "105",
+          "price": "$6.00",
+          "image": "/img/menu/c63.jpg"
+        },
+        {
+          "title": "Lemon Yakult",
+          "n2": "柠檬多多",
+          "description": "With fresh lemon and yakult. (Non Caffeine;  Non-Diary)",
+          "calories": "105",
+          "price": "$6.00",
+          "image": "/img/menu/c64.jpg"
+        }
+      ]
+    }   
+  ],
+          "description": "<p>This is custom text for store description.</p><p>Second line description</p>"
         }
       ]
     }
@@ -912,48 +1190,48 @@
           "caption": "Fresh GrapeFruit Tea & Fresh Orange Tea",
           "t1": "",
           "t2": "Fresh GrapeFruit Tea & Fresh Orange Tea",
-          "img": "/static/img/gallery/g1.jpg",
-          "img2": "/static/img/gallery/g1-thumb.jpg"
+          "img": "/img/gallery/g1.jpg",
+          "img2": "/img/gallery/g1-thumb.jpg"
         },
         {
           "id": "002",
           "caption": "Dorayaki",
           "t1": "",
           "t2": "Dorayaki",
-          "img": "/static/img/gallery/g2.jpg",
-          "img2": "/static/img/gallery/g2-thumb.jpg"
+          "img": "/img/gallery/g2.jpg",
+          "img2": "/img/gallery/g2-thumb.jpg"
         },
         {
           "id": "003",
           "caption": "Taro Bubble Milk Tea",
           "t1": "",
           "t2": "Taro Bubble Milk Tea",
-          "img": "/static/img/gallery/g3.jpg",
-          "img2": "/static/img/gallery/g3-thumb.jpg"
+          "img": "/img/gallery/g3.jpg",
+          "img2": "/img/gallery/g3-thumb.jpg"
         },
         {
           "id": "004",
           "caption": "Cheese Tea Series",
           "t1": "",
           "t2": "Cheese Tea Series",
-          "img": "/static/img/gallery/g4.jpg",
-          "img2": "/static/img/gallery/g4-thumb.jpg"
+          "img": "/img/gallery/g4.jpg",
+          "img2": "/img/gallery/g4-thumb.jpg"
         },
         {
           "id": "005",
           "caption": "Super Fruit Green Tea",
           "t1": "",
           "t2": "Super Fruit Green Tea",
-          "img": "/static/img/gallery/g5.jpg",
-          "img2": "/static/img/gallery/g5-thumb.jpg"
+          "img": "/img/gallery/g5.jpg",
+          "img2": "/img/gallery/g5-thumb.jpg"
         },       
         {
           "id": "006",
           "caption": "Brown Sugar Bubble Milk Tea",
           "t1": "",
           "t2": "Brown Sugar Bubble Milk Tea",
-          "img": "/static/img/gallery/g6.jpg",
-          "img2": "/static/img/gallery/g6-thumb.jpg"
+          "img": "/img/gallery/g6.jpg",
+          "img2": "/img/gallery/g6-thumb.jpg"
         }
   ]
 }

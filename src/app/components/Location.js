@@ -201,8 +201,9 @@ class MenuGroup extends React.Component {
 
                                                 <div className="card-header">
                                                     <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target={"#open_hours" + item["id"]} role="button" aria-expanded="false" aria-controls={"open_hours" + item["id"]}>
-                                                        Open Hours>
+                                                        Open Hours
                                                     </button>
+
                                                 </div>
 
                                                 <div className="collapse" id={"open_hours" + item["id"]}>
@@ -224,47 +225,6 @@ class MenuGroup extends React.Component {
                                         }
 
 
-
-                                        {/*
-                                        <div className="accordion" id="accordionExample">
-                                            <div className="card">
-                                                <div className="card-header" id={theHourId}>
-                                                    
-                                                        <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target={"#" + collpaseId} aria-expanded="false" aria-controls={collpaseId}>
-                                                            Today: {"abc" + item["hours"]}       
-                                                        </button>
-                                                    
-                                                </div>
-                                                <div id={collpaseId} className="collapse" aria-labelledby={theHourId} data-parent="#accordionExample">
-                                                    <div className="card-body">
-                                                        <ul>
-                                                            <li>
-                                                                Mon: 8:00am - 10:00pm
-                                                            </li>
-                                                            <li>
-                                                                Tues: 8:00am - 10:00pm
-                                                            </li>
-                                                            <li>
-                                                                Wend: 8:00am - 10:00pm
-                                                            </li>
-                                                            <li>
-                                                                Thur: 8:00am - 10:00pm
-                                                            </li>
-                                                            <li>
-                                                                Fri: 8:00am - 10:00pm
-                                                            </li>
-                                                            <li>
-                                                                Sat: 8:00am - 10:00pm
-                                                            </li>                                                                                                                                                                                                                                                
-                                                            <li>
-                                                                Sun: 8:00am - 10:00pm
-                                                            </li>
-                                                        </ul>
-      </div>
-                                                </div>
-                                            </div>
-                                        </div>
-*/}
 
 {item["cs"] ? "" : 
 
@@ -289,11 +249,12 @@ class MenuGroup extends React.Component {
 
 
                                         {item["order"] != null ? 
-                                        
-                                        <a href={item["order"]} target="_blank" rel="noopener" className="btn btn-primary btn-lg" role="button">Order Now</a>
+                                            <a href={item["order"]} target="_blank" rel="noopener" className="btn btn-primary btn-lg" role="button">Order Now</a>
+                                            : null
+                                        }
 
-                                        : null
-                                    }
+                                        <a href={"/locations/"+item["id"]} target="_blank" rel="noopener" className="btn btn-primary btn-lg" role="button">Go to Store</a>
+
 
                                         
 

@@ -13,4 +13,9 @@ function get_store_locations() {
 }
 
 
-module.exports = { get_store_locations }
+function get_default_menu() {
+    return data.menu;
+}
+
+
+module.exports = { get_store_locations, get_default_menu }

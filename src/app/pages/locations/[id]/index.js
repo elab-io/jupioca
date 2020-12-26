@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import parse from 'html-react-parser';
+
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Layout from '../../../components/Layout';
@@ -12,6 +14,7 @@ import CallToAction from '../../../components/CallToAction';
 import Contact from '../../../components/Contact';
 import Franchise from '../../../components/Franchise';
 import Footer from '../../../components/Footer';
+import ShuffleMenu2 from '../../../components/ShuffleMenu2';
 import ShuffleMenu from '../../../components/ShuffleMenu';
 import Location from '../../../components/Location';
 import Job from '../../../components/Job';
@@ -35,17 +38,41 @@ function Store ({store}) {
   }
 
   function AddOperationInfo() {
-    console.log(store);
+    
     var about_section = document.getElementById('about');
+   
     if(about_section) {
-      let hours = Object.keys(store.hours).map((index) => {
+      let hour_list = Object.keys(store.hours).map((index) => {
         return (
           <li key={index}>{index}: {store.hours[index]}</li>
         )
       });
 
-      let operate_hours = React.createElement("ul", {className: "hours"}, hours);
+      var store_description = null;
+      if(store.description) {
+        console.log(store.description);
+        store_description = (
+          <div className="description">
+            { parse(store.description) }
+          </div>
+        );
+      }
 
+      var operate_hours = (
+        <div className="hours">
+          Open Hours:<br />
+          { React.createElement("ul", {className: "hours"}, hour_list) }
+          <br />
+        </div>
+      );
+
+      var store_address = (
+        <div className="storeAddress">
+          {store.title}<br />
+          {store.address}<br />
+          {store.phone}<br /><br />
+        </div>   
+      );
 
       var socials = null;
       if(Object.keys(store.social).length > 0) {
@@ -57,8 +84,16 @@ function Store ({store}) {
         socials = React.createElement("ul", {className: "socials-links"}, social_list);
       } 
 
+      var order_now = null;
+      if(store.order_now) {
+        order_now = (
+          <a href={store.order} rel="noopener" className="btn btn-primary btn-lg" role="button">Order Now</a>
+        )
+      }
 
-      const element = (
+
+
+      const content_markup = (
         <>
         <div className="container">
           <div className="text-dark">
@@ -73,20 +108,11 @@ function Store ({store}) {
                 </div>
 
                 <div className="col-lg-6 col-md-12 col-sm-12 text-dark text-left about-text">
-                  
-                  <div className="storeAddress">
-                    {store.title}<br />
-                    {store.address}<br />
-                    {store.phone}
-                  </div>        
-                  <br /><br />
-                  <div className="hours">
-                    Open Hours:<br />
-                    {operate_hours}
-                  </div>
-
+                  {store_description} 
+                  {store_address}    
+                  {operate_hours}
                   {socials}
-
+                  {order_now}
                 </div>
               </div>
             </div>
@@ -97,13 +123,8 @@ function Store ({store}) {
       );
 
 
-      // about_section.appendChild(operations);
-
-      // var about = ReactDOM.createElement(<p></p>);
-
-      console.log(about_section.innerHTML);
       ReactDOM.render(
-        element,
+        content_markup,
         document.getElementById('about')
       );
     }
@@ -127,7 +148,7 @@ function Store ({store}) {
         <Navigation />
         <Masthead />
         <About />
-        {/* <ShuffleMenu data={ this.props.data } /> */}
+        <ShuffleMenu data={ store } />
         {/* <Location data={ this.props.data } /> */}
         {/* <Services /> */}
         {/* <Gallery data={ this.props.data } /> */}
@@ -159,10 +180,12 @@ export async function getStaticPaths() {
 // This function gets called at build time
 export async function getStaticProps({params}) {
     locations = api.get_store_locations();
-    const store = Object.keys(locations)
+    const store_id = Object.keys(locations)
         .filter((key)=> {return locations[key].id == params.id})[0];
-   
-    return { props: { store: locations[store] } }
+  
+    var store = locations[store_id];
+    store.menu = (store.menu) ? store.menu : api.get_default_menu();
+    return { props: { store: store } }
 }
 
 export default Store

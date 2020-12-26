@@ -3,13 +3,14 @@ import Shuffle from 'shufflejs';
 import localData from '../data/item.json';
 
 
-class ShuffleMenu extends React.Component {
+class ShuffleMenu2 extends React.Component {
     constructor(props) {
         super();
         this.categoryButtons = '#shuffle-menu .filter-group li a';
         this.shuffleGrid = '#shuffle-menu #shuffle-grid-menu';
         this.itemSelector = '#shuffle-menu .category';
-        this.sizer = '#shuffle-menu .sizer';        
+        this.sizer = '#shuffle-menu .sizer';
+        console.log(props);
         this.state = {
             // 'menu': props.data.menu
             'menu': (typeof props.data !== 'undefined') ? props.data.menu : localData.menu
@@ -91,18 +92,6 @@ class ShuffleMenu extends React.Component {
                 <div className="page-section" id="shuffle-menu">
                     <div className="container">
 
-                        {/* <div className="row">
-                            <div className="dropdown col-sm-12 col-md-4">
-                                <button className="btn btn-secondary dropdown-toggle menu-dropdown-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
-                                <div className="dropdown-menu filter-group" aria-labelledby="dropdownMenuButton">
-                                    {this.state.menu.map((menu, i) => {
-                                        return <a className="nav-link dropdown-item" data-filter={menu["group-name"]} data-groupid={menu["id"]} key={i}>{menu["group-name"]}</a>
-                                    })}
-                                </div>
-                            </div> 
-                        </div> */}
-
-
                 <div className="row">
                     <ul className="filter-group col-sm-12 nav justify-content-center">
                     
@@ -172,4 +161,4 @@ class MenuGroup extends React.Component {
 }
 
 
-export default ShuffleMenu;
+export default ShuffleMenu2;
