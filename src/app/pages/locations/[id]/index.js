@@ -18,6 +18,7 @@ import ShuffleMenu2 from '../../../components/ShuffleMenu2';
 import ShuffleMenu from '../../../components/ShuffleMenu';
 import Location from '../../../components/Location';
 import Job from '../../../components/Job';
+import StoreInfo from '../../../components/StoreInfo';
 
 // import local data
 import data from '../../../data/moge.json';
@@ -36,6 +37,17 @@ function Store ({store}) {
       master_head.style.backgroundImage = "url(" + store.store_pic + ")";
     }
   }
+
+  function MakeNavScrolledEffect() {
+    var main_nav = document.getElementById('mainNav');
+    main_nav.style.backgroundColor = "#fff";
+    
+    var nav_items = document.querySelectorAll(".navbar-nav .nav-item a")
+    for (var i = 0; i < nav_items.length; i++) {
+      nav_items[i].style.color ="black";
+    }
+  }
+
 
   function AddOperationInfo() {
     
@@ -134,8 +146,9 @@ function Store ({store}) {
   }
 
   useEffect(() => {
-    UpdateMasterHeadBackground();
-    AddOperationInfo();
+    // UpdateMasterHeadBackground();
+    // AddOperationInfo();
+    MakeNavScrolledEffect();
     return () => {
       // Clean up the subscription
       // subscription.unsubscribe();
@@ -146,8 +159,9 @@ function Store ({store}) {
     <>
         <Layout>
         <Navigation />
-        <Masthead />
-        <About />
+        {/* <Masthead /> */}
+        {/* <About /> */}
+        <StoreInfo data={store} />
         <ShuffleMenu data={ store } />
         {/* <Location data={ this.props.data } /> */}
         {/* <Services /> */}
