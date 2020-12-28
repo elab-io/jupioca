@@ -34,6 +34,23 @@ services:
           cd src/app
           yarn export
         "
+  deploy-gh:
+    volumes:
+      - .:/docker
+    extends:
+      service: base
+    environment:
+      APP_NAME: nextjs
+    command: >
+        sh -c "
+          cd src/app
+          yarn export
+          touch out/.nojekyll
+          echo 'jupioca.elab.io' > out/CNAME
+          git add out/
+          git commit -m 'Deploy Next.js to gh-pages' 
+          git subtree push --prefix out origin gh-pages
+        "
   build-css:
     ports:
       - "3000:3000"
