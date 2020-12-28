@@ -388,7 +388,6 @@
       "group-items": [
         {
           "id": "001",
-          "store_url": "flushing-ny",
           "meta":{
             "og:type":"business.business",
             "og:title":"Moge Tee - New York - W 9th St Online Ordering",
@@ -404,6 +403,7 @@
             "og:description":"Order ahead, and skip the line. Online ordering has never been easier!"
           },
           "title": "Moge Tee Flushing",
+          "store_url": "flushing-ny",
           "address": "38-03 Main St, Flushing, NY 11354",
           "hours": {
             "Mon-Sun": "10:300AM - 10:30PM"
@@ -485,6 +485,7 @@
           "id": "002",
           "title": "Moge Tee Chinatown",
           "address": "90 Canal St, New York, NY 10002",
+          "store_url": "chinatown-ny",
           "hours": {
             "Mon-Sun": "11:00AM-10:00PM"
           },
@@ -545,7 +546,9 @@
             "facebook": "https://www.facebook.com/Mogeteeusa/",
             "instagram": "https://www.instagram.com/mogeteeusa/"
           },
-          "order": "https://www.ubereats.com/en-US/new-york/food-delivery/moge-tee-%E6%84%BF%E8%8C%B6/T2hs6ZdySoaY9eA3AG9vPw/"
+          "order": {
+            "uber": "https://www.ubereats.com/en-US/new-york/food-delivery/moge-tee-%E6%84%BF%E8%8C%B6/T2hs6ZdySoaY9eA3AG9vPw/"
+          }
         },
         {
           "id": "007",

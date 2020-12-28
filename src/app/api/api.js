@@ -19,8 +19,12 @@ function get_default_menu() {
 // Don't confuse this with the get_store_locations().
 // This returns the locations objects with properties (groupd-name etc.) for rendering the 
 // location components.
+function get_location_list() {
+    return { locations: data.locations };
+}
+
 function get_full_site_data() {
     return data;
 }
 
-module.exports = { get_store_locations, get_default_menu, get_full_site_data }
+module.exports = { get_store_locations, get_default_menu, get_full_site_data, get_location_list }

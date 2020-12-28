@@ -1,4 +1,16 @@
-## Using Docker command
+## How to run
+
+```sh
+⟩ ./start.sh
+Select the operation ************
+  1) Starts Next.js in development mode
+  2) Export Static HTML to {out} directory
+  3) Rebuild docker image
+  4) Ssh into the container
+```
+
+## Alternatively using Docker command
+
 ```sh
 // Run local development
 docker-composer up next
@@ -10,52 +22,11 @@ docker build --no-cache -t docker-nextjs .
 docker run --rm -it docker-nextjs sh
 ```
 
+## For front-end style
 
-## Set up
-```
-yarn install // Fetch packages and dependence
-yarn next // Run app dev mode
+Sping up development container, 
+then modify the src/app/public/scss/site.scss, then it will automatically compile.
 
-export to static site
-/website/src/app/yarn next build
-/website/src/app/yarn next export
-The above cmd will generate the contenti inside the out folder
-
-// To deploy to GCP
-yarn build-all
-yarn deploy
-
-
-// For css development
-cd jupioca/src/app/static
-gulp watch
-
-yarn build-css
-
-```
-
-// For firebase
-firebase login
-finrebase init // to set up could function and hosting
-
-or modify .firebaserc to point to your cloud project
-
-
-To run app independently without cloud function, comment out `disDir` in the next.config.js
-
-```
-module.exports = {
-    exportPathMap: function () {
-      return {
-        '/': { page: '/' },
-        '/menu': { page: '/menu' },
-      }
-    },
-    
-   // distDir: '../functions/next'
-  }
-
-```
 
 
 ## Reference:

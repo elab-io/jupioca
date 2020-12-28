@@ -22,9 +22,64 @@ class StoreInfo extends React.Component {
         return false;
     }
 
-    displayOpenHour() {
-      return React.createElement("ul", {className: "hours"}); 
+    displayOrder() {
+      return (
+        <div className="order">
+        <ul className="order-links clearfix">
+          {Object.keys(this.state.store.order).map((index)=>{
+            return <li key={index}><a href={this.state.store.order[index]} rel="noopener" className="btn btn-primary btn-lg" role="button">{index}</a></li>
+          })}
+          </ul>
+          </div>
+      )
     }
+
+    displayOpenHour() {
+      return (
+        <div className="hours">
+        Open hours:
+        <ul>
+          {Object.keys(this.state.store.hours).map((index) => {
+            return <li key={index}>{this.state.store.hours[index]}</li>
+          })}
+        </ul>
+      </div>
+      )
+    }
+
+    displaySocial() {
+      return (
+        <div className="social">
+        <ul className="social-links clearfix">
+          {Object.keys(this.state.store.social).map((index) => {
+            return <li key={index}><a target="_blank" aria-label="Link to social media" href={this.state.store.social[index]}><i className={"fab fa-" + index}></i></a></li>
+
+          })}
+          <li><a className="popup-gmaps small font-italic" rel="noopener" href={this.getMapUrl(this.state.store.address)}>View Map</a></li>
+        </ul>
+      </div>
+      );
+    }
+
+    displayStorePicture(){
+      return (
+        this.state.store.store_pic ?
+          <img src={this.state.store.store_pic} alt="Store Picture" />
+          :
+          <img src="/img/moge/about-us.jpg" alt="Store Picture" />     
+      )
+    }
+
+    displayStoreAddress() {
+      return (
+        <div className="storeAddress">
+        {this.state.store.title}<br />
+        {this.state.store.address}<br />
+        {this.state.store.phone}<br /><br />
+      </div>  
+      )
+    }
+
 
   render() {
     return (
@@ -37,63 +92,17 @@ class StoreInfo extends React.Component {
 
               <div className="row">
                 <div className="col-lg-6 col-md-12 col-sm-12">
-                  {this.state.store.store_pic ?
-                    <img src={this.state.store.store_pic} alt="Store Picture" />
-                    :
-                    <img src="/img/moge/about-us.jpg" alt="Store Picture" />
-                }
+                  { this.displayStorePicture() }
                 </div>
-                <div className="col-lg-6 col-md-12 col-sm-12 text-dark about-text text-left">
-                  
-                  { this.state.store.description ?
-                  parse(this.state.store.description) : null }
-
-                  <div className="storeAddress">
-                    {this.state.store.title}<br />
-                    {this.state.store.address}<br />
-                    {this.state.store.phone}<br /><br />
-                  </div>  
-
-
-                <div className="hours">
-                  Open hours:
-                  <ul>
-                    {Object.keys(this.state.store.hours).map((index) => {
-                      return <li key={index}>{this.state.store.hours[index]}</li>
-                    })}
-                  </ul>
+                
+                <div className="col-lg-6 col-md-12 col-sm-12 text-dark about-text text-left">                  
+                  { this.state.store.description ? parse(this.state.store.description) : null }
+                  { this.displayStoreAddress() }
+                  { this.displayOpenHour() }
+                  { this.state.store.social ? this.displaySocial() : null }
+                  { this.state.store.order ? this.displayOrder() : null }
                 </div>
 
-                {
-                this.state.store.social ?
-                  <div className="social">
-                    <ul className="social-links clearfix">
-                      {Object.keys(this.state.store.social).map((index) => {
-                        return <li key={index}><a target="_blank" aria-label="Link to social media" href={this.state.store.social[index]}><i className={"fab fa-" + index}></i></a></li>
-
-                      })}
-                      <li><a className="popup-gmaps small font-italic" rel="noopener" href={this.getMapUrl(this.state.store.address)}>View Map</a></li>
-                    </ul>
-                  </div>
-                : null
-                }
-
-
-
-              { this.state.store.order ?
-              <div className="order">
-              <ul className="order-links clearfix">
-                {Object.keys(this.state.store.order).map((index)=>{
-                  return <li key={index}><a href={this.state.store.order[index]} rel="noopener" className="btn btn-primary btn-lg" role="button">{index}</a></li>
-                })}
-                </ul>
-                </div>
-                : null
-              }
-
-
-
-                </div>
               </div>
             </div>
           </div>
