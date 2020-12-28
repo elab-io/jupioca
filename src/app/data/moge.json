@@ -184,7 +184,7 @@
           "price": "$0.60",
           "image": "/img/menu/c45.jpg"
         }
-      
+
       ]
     },
     {
@@ -257,7 +257,7 @@
           "price": "$6.00",
           "image": "/img/menu/c64.jpg"
         }
-     
+
       ]
     },
     {
@@ -293,7 +293,7 @@
           "calories": "91-152",
           "price": "$6.00",
           "image": "/img/menu/c73.jpg"
-        }        
+        }
       ]
     },
     {
@@ -337,7 +337,7 @@
           "calories": "",
           "price": "$6.00",
           "image": "/img/menu/c84.jpg"
-        }                
+        }
       ]
     },
     {
@@ -373,9 +373,9 @@
           "calories": "122.4",
           "price": "$6.00",
           "image": "/img/menu/c93.jpg"
-        }              
+        }
       ]
-    }                      
+    }
   ],
   "locations": [
     {
@@ -388,6 +388,21 @@
       "group-items": [
         {
           "id": "001",
+          "store_url": "flushing-ny",
+          "meta":{
+            "og:type":"business.business",
+            "og:title":"Moge Tee - New York - W 9th St Online Ordering",
+            "og:image":"https://abc.g.com/ccom/merchant-content-a-z/B/mogete/Logo-FullColor.png",
+            "og:business:contact_data":"business.business",
+            "business:contact_data:street_address":"200 W. 23rd St.",
+            "business:contact_data:locality":"New York",
+            "business:contact_data:region":"NY",
+            "business:contact_data:postal_code":"10011",
+            "business:contact_data:country_name":"United States",
+            "place:location:latitude":"40.74516914",
+            "place:location:longitude":"-73.999995",
+            "og:description":"Order ahead, and skip the line. Online ordering has never been easier!"
+          },
           "title": "Moge Tee Flushing",
           "address": "38-03 Main St, Flushing, NY 11354",
           "hours": {
@@ -400,9 +415,14 @@
             "facebook": "https://www.facebook.com/Mogeteeusa/",
             "instagram": "https://www.instagram.com/mogeteeusa/"
           },
-          "order": "https://www.ubereats.com/en-US/new-york/food-delivery/moge-tee-%E6%84%BF%E8%8C%B6-flushing/K81n8zJKScy7x4r84ajTJg/",
+          "order": {
+            "uber": "https://www.ubereats.com/en-US/new-york/food-delivery/moge-tee-%E6%84%BF%E8%8C%B6-flushing/K81n8zJKScy7x4r84ajTJg/",
+            "yelp": "https://www.yelp.com/biz/m%C3%B6ge-tee-falls-church-va-falls-church-2?osq=moge+tee"
+          },
           "description":"<p>This is custom text for store description.</p><p>Second line description</p>",
-          "menu":[{
+          "store_pic": "/img/bg-masthead.jpg",
+                    "menu":[
+          {
             "id": "C6",
             "group-name": "Fresh Fruit Yakult",
             "n2": "鲜果多多",
@@ -427,9 +447,39 @@
                 "calories": "105",
                 "price": "$6.00",
                 "image": "/img/menu/c62.jpg"
-              } 
-            ]}],
-          "store_pic": "/img/bg-masthead.jpg"
+              }
+            ]},
+
+          {
+            "id": "C5",
+            "group-name": "Fresh Fruit Yakult A",
+            "n2": "鲜果多多",
+            "imgs": [
+              {
+                "img": "jpg"
+              }
+            ],
+            "group-items": [
+              {
+                "title": "Dragon Fruit Yakult B",
+                "n2": "火龙果多多",
+                "description": "With fresh dragon fruit and yakult. (Non Caffeine;  Non-Diary)",
+                "calories": "105",
+                "price": "$6.50",
+                "image": "/img/menu/c61.jpg"
+              },
+              {
+                "title": "Grapefruit Yakult C",
+                "n2": "西柚多多",
+                "description": "With fresh grapefruit and yakult. (Non Caffeine;  Non-Diary)",
+                "calories": "105",
+                "price": "$6.00",
+                "image": "/img/menu/c62.jpg"
+              }
+            ]}
+
+            ]
+
         },
         {
           "id": "002",
@@ -563,7 +613,7 @@
           "cs": false,
           "social": {
           }
-        }        
+        }
       ]
     },
     {
@@ -628,7 +678,7 @@
             "instagram": "https://www.instagram.com/mogeteedmv/"
           },
           "order": "https://www.ubereats.com/en-US/washington-dc/food-delivery/moge-tee-%E6%84%BF%E8%8C%B6/3XCofasvT6uH-IMXiHsfWw/"
-        },        
+        },
         {
           "id": "0019",
           "title": "Tyson’s Corner, VA",
@@ -699,7 +749,7 @@
           }
         }
       ]
-    },    
+    },
 
     {
       "group-name": "Florida",
@@ -718,7 +768,7 @@
           "cs": true,
           "social": {
           }
-        },        
+        },
         {
           "id": "0062",
           "title": "Moge Tee Sand Lake, Florida",
@@ -744,7 +794,7 @@
           }
         }
       ]
-    },       
+    },
     {
       "group-name": "Georgia",
       "group-items": [
@@ -803,9 +853,9 @@
           "phone": "(201) 849-5082",
           "cs": false,
           "social": {
-            
+
           },
-          "order": "https://mogeteefortlee.smartonlineorder.com/"          
+          "order": "https://mogeteefortlee.smartonlineorder.com/"
         },
         {
           "id": "0060",
@@ -817,10 +867,10 @@
           "phone": "(551) 556-2880",
           "cs": false,
           "social": {
-            
+
           },
           "order": "https://www.mogeteenewport.com/"
-        },        
+        },
         {
           "id": "0061",
           "title": "Edison, NJ",
@@ -831,7 +881,7 @@
           "phone": "(551) 556-2880",
           "cs": true,
           "social": {
-            
+
           }
         }
       ]
@@ -870,7 +920,7 @@
           "cs": true,
           "social": {
           }
-        }        
+        }
       ]
     },
     {
@@ -902,7 +952,7 @@
 
           },
           "phone": "(984) 200-9008",
-          "cs": false, 
+          "cs": false,
           "social": {
           }
         },
@@ -915,7 +965,7 @@
             "Fri-Sat": "10:30AM - 10:00PM"
           },
           "phone": "(984) 200-9008",
-          "cs": true, 
+          "cs": true,
           "social": {
           },
   "menu": [
@@ -1103,7 +1153,7 @@
           "price": "$0.60",
           "image": "/img/menu/c45.jpg"
         }
-      
+
       ]
     },
     {
@@ -1177,7 +1227,7 @@
           "image": "/img/menu/c64.jpg"
         }
       ]
-    }   
+    }
   ],
           "description": "<p>This is custom text for store description.</p><p>Second line description</p>"
         }
@@ -1224,7 +1274,7 @@
           "t2": "Super Fruit Green Tea",
           "img": "/img/gallery/g5.jpg",
           "img2": "/img/gallery/g5-thumb.jpg"
-        },       
+        },
         {
           "id": "006",
           "caption": "Brown Sugar Bubble Milk Tea",

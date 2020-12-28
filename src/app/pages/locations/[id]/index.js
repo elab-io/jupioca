@@ -31,7 +31,7 @@ var locations = {};
 function Store ({store, site_data}) {
   const router = useRouter()
   const { id } = router.query
-console.log(site_data);
+console.log(store.meta);
   function UpdateMasterHeadBackground() {    
     if(store.store_pic) {
       var master_head = document.getElementsByClassName('masthead')[0];
@@ -49,6 +49,18 @@ console.log(site_data);
     }
   }
 
+  function AddMetadata() {
+    var head = document.getElementsByTagName('head')[0];
+
+    if(store.meta) {
+      Object.keys(store.meta).map((key)=>{
+        let meta = document.createElement('meta');
+        meta.setAttribute(key,store.meta[key]);
+        head.appendChild(meta);
+      });
+    }
+  }
+
 
   function AddOperationInfo() {
     
@@ -63,7 +75,6 @@ console.log(site_data);
 
       var store_description = null;
       if(store.description) {
-        console.log(store.description);
         store_description = (
           <div className="description">
             { parse(store.description) }
@@ -141,15 +152,18 @@ console.log(site_data);
         document.getElementById('about')
       );
     }
-
-    
-
   }
 
+   function UpdatePageTitle() {
+     let title = document.getElementsByTagName('title')[0];
+    title.innerHTML = title.innerHTML +  " - " + store.title;
+   } 
   useEffect(() => {
     // UpdateMasterHeadBackground();
     // AddOperationInfo();
     MakeNavScrolledEffect();
+    AddMetadata();
+    UpdatePageTitle();
     return () => {
       // Clean up the subscription
       // subscription.unsubscribe();
@@ -202,7 +216,6 @@ export async function getStaticProps({params}) {
   
     var store = locations[store_id];
     store.menu = (store.menu) ? store.menu : api.get_default_menu();
-    var test = "hello world"; 
     var site_data= api.get_full_site_data();    
     
     return { props: { store: store, site_data: site_data } }
