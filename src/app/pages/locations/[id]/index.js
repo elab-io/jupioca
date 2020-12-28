@@ -5,7 +5,7 @@ import parse from 'html-react-parser';
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Layout from '../../../components/Layout';
-import Navigation from '../../../components/Navigation';
+import StoreNavigation from '../../../components/StoreNavigation';
 import Masthead from '../../../components/Masthead';
 import About from '../../../components/About';
 import Services from '../../../components/Services';
@@ -19,6 +19,7 @@ import ShuffleMenu from '../../../components/ShuffleMenu';
 import Location from '../../../components/Location';
 import Job from '../../../components/Job';
 import StoreInfo from '../../../components/StoreInfo';
+import AppInfo from '../../../components/AppInfo';
 
 // import local data
 import data from '../../../data/moge.json';
@@ -27,10 +28,10 @@ import next from 'next';
 
 var locations = {};
 
-function Store ({store}) {
+function Store ({store, site_data}) {
   const router = useRouter()
   const { id } = router.query
-
+console.log(site_data);
   function UpdateMasterHeadBackground() {    
     if(store.store_pic) {
       var master_head = document.getElementsByClassName('masthead')[0];
@@ -158,7 +159,7 @@ function Store ({store}) {
   return (
     <>
         <Layout>
-        <Navigation />
+        <StoreNavigation />
         {/* <Masthead /> */}
         {/* <About /> */}
         <StoreInfo data={store} />
@@ -166,10 +167,12 @@ function Store ({store}) {
         {/* <Location data={ this.props.data } /> */}
         {/* <Services /> */}
         {/* <Gallery data={ this.props.data } /> */}
+        <AppInfo />
         <Contact />
         {/* <CallToAction /> */}
         <Job />
         <Franchise />
+        <Location data={ site_data } />
         <Footer />
         </Layout>
     </>
@@ -199,7 +202,10 @@ export async function getStaticProps({params}) {
   
     var store = locations[store_id];
     store.menu = (store.menu) ? store.menu : api.get_default_menu();
-    return { props: { store: store } }
+    var test = "hello world"; 
+    var site_data= api.get_full_site_data();    
+    
+    return { props: { store: store, site_data: site_data } }
 }
 
 export default Store
