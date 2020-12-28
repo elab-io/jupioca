@@ -12,24 +12,27 @@ import Footer from '../components/Footer';
 import ShuffleMenu from '../components/ShuffleMenu';
 import Location from '../components/Location';
 import Job from '../components/Job';
-
+import api from '../api/api';
 
 
 class HomePage extends React.Component {
-
+    constructor(props) {
+        super();
+        this.state = {
+            site_data : api.get_full_site_data()
+        };
+    }
     render(){
         return (
             <>
             <Layout>
             <Navigation />
-            <Masthead data={ this.props.data } />
+            <Masthead data={ this.state.site_data } />
             <About />
-            <ShuffleMenu data={ this.props.data } />
-            <Location data={ this.props.data } />
-            {/* <Services /> */}
-            <Gallery data={ this.props.data } />
+            <ShuffleMenu data={ this.state.site_data } />
+            <Location data={ this.state.site_data } />
+            <Gallery data={ this.state.site_data } />
             <Contact />
-            {/* <CallToAction /> */}
             <Job />
             <Franchise />
             <Footer />

@@ -87,13 +87,22 @@ function Store ({store, location_list}) {
 export async function getStaticPaths() {
     locations = api.get_store_locations();
     // console.log(locations);
-    const paths = Object.keys(locations).map((key) => ({
-        params: { 
-          // note: you have to provide 'id' as key, otherwise nextjs will complain
-          id: (locations[key].store_url ? locations[key].store_url : '/'),
-        },
-      }))
-    
+    // const paths = Object.keys(locations).map((key) => ({
+    //     params: { 
+    //       // note: you have to provide 'id' as key, otherwise nextjs will complain
+    //       id: locations[key].id
+    //     },
+    //   }))
+   
+    var paths = [];    
+  Object.keys(locations).map((key)=>{
+    if(locations[key].store_url) {
+      paths.push({params:{id: locations[key].store_url}});
+    }
+  });
+
+
+
     // We'll pre-render only these paths at build time.
     // { fallback: false } means other routes should 404.
     return { paths, fallback: false }
@@ -104,6 +113,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({params}) {
     locations = api.get_store_locations();
     const store_id = Object.keys(locations)
+        // .filter((key)=> {return locations[key].id == params.id})[0];
         .filter((key)=> {return locations[key].store_url == params.id})[0];
   
     var store = locations[store_id];

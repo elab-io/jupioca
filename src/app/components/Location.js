@@ -1,6 +1,5 @@
 import React from 'react';
 import Shuffle from 'shufflejs';
-import localData from '../data/item.json';
 
 class Location extends React.Component {
     constructor(props) {
@@ -10,7 +9,7 @@ class Location extends React.Component {
         this.itemSelector = '#locations .category';
         this.sizer = '#locations .sizer';
         this.state = {
-            'locations': (typeof props.data !== 'undefined') ? props.data.locations : localData.locations                       
+            'locations': props.data.locations           
         };
     }
 
