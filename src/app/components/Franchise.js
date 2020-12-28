@@ -1,31 +1,56 @@
 import React from 'react';
 
 class Franchise extends React.Component {
-    render() {
-        return (
-          <section class="page-section" id="franchise">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8 text-center">
-                <h2 class="mt-0">Franchise!</h2>
-                <hr class="divider my-4" />
-                <p class="text-muted mb-5">Franchise with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+  render() {
+    return (
+      <section className="page-section bg-dark text-white" id="franchise">
+        <div id="contact-area">
+
+          <div className="container">
+            <h2>Franchise</h2>
+            <p>Interested in franchise with us? Please fill out below form and we will contact you.</p>
+            <br/>
+            <form id="contact-form" action="/submitFranchise" method="post">
+
+              <div className="form-group">
+                <label htmlFor="name">Full Name</label>
+                <input name="name" id="name" className="form-control" placeholder="" aria-label="Name" />
               </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                <div>+1 (202) 555-0149</div>
+
+              <div className="form-group">
+                <label htmlFor="phoneNo">Phone Number</label>
+                <input name="phoneNo" id="phoneNo" className="form-control" placeholder="" aria-label="Phone Number" />
               </div>
-              <div class="col-lg-4 mr-auto text-center">
-                <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+
+              <div className="form-group">
+                <label htmlFor="area">Interest Area</label>
+                <input name="area" id="area" className="form-control" placeholder="" aria-label="Interest Area" />
               </div>
-            </div>
+
+              <div className="form-group">
+                <label htmlFor="address">Address</label>
+                <input name="address" id="address" className="form-control" placeholder="" aria-label="Address" />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input name="email" id="email" className="form-control" placeholder="" aria-label="Email" />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="msg">Your Message</label>
+                <textarea name="msg" id="msg" className="form-control" rows="3" aria-label="Your Message"></textarea>
+              </div>
+
+              <fieldset>
+                <button id="submitData" type="submit" className="btn btn-primary">SUBMIT</button>
+              </fieldset>
+            </form>
           </div>
-        </section>  
-        ) ;
-    }
+        </div>
+      </section>
+    );
+  }
 }
 
 export default Franchise;

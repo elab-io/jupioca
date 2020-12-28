@@ -1,0 +1,34 @@
+// Import custom variables (overrides Bootstrap default variables)
+@import "./variables.scss";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Import custom styles
+@import "./global.scss";
+@import "./navbar.scss";
+@import "./masthead.scss";
+@import "./gallery.scss";
+@import "./shufflemenu.scss";
+@import "./location.scss";
+@import "./job.scss";
+@import "./about.scss";
+@import "./default-override.scss";
+
+
+.item img {
+  width: 100%;
+  height: auto
+}
+
+.skip-link {
+	position: absolute;
+	width:1px;
+	height: 1px;
+	overflow: hidden;
+	&:focus {
+	  position: static;
+	  width: auto;
+	  height: auto;
+	}
+}

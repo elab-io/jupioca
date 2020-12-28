@@ -1,0 +1,45 @@
+// Import custom variables (overrides Bootstrap default variables)
+// Import Bootstrap
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "../css/creative.min.css";
+// Import custom styles
+// @import "./global.scss";
+
+
+
+.item img {
+  width: 100%;
+  height: auto
+}
+
+.skip-link {
+	position: absolute;
+	width:1px;
+	height: 1px;
+	overflow: hidden;
+	&:focus {
+	  position: static;
+	  width: auto;
+	  height: auto;
+	}
+}
+ul.social-links {
+	list-style: none;
+	padding: 0;
+	margin-top: 1em;        
+	margin-bottom: 1em;        
+
+	> li {
+		float: left;
+		a {
+			display: block;
+			font-size: 1.3rem;
+			// color: #777;
+			margin-right: 1.0rem;
+			&:hover {
+				color: #212529;
+			}
+		}
+	}
+}

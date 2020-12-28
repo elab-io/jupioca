@@ -7,19 +7,41 @@ const compression = require('compression')
 
 
 const dev = process.env.NODE_ENV !== 'production'
-const app = next({ dev })
+const app = next({ dev, xPoweredBy: false })
 const handle = app.getRequestHandler()
+
+// disalbe the x-poewred-by
+// app.config.poweredByHeader = false
+app.nextConfig.poweredByHeader = false
 
 app.prepare().then(() => {
   const server = express()
+  server.disable('x-powered-by'); // This disables Express Header
+
   server.use(compression())
 
   // Set up home page as a simple render of the page.
   server.get('/', (req, res) => {
-    // console.log('Render home page')
     const itemData = api.getItem()
     return app.render(req, res, '/', { itemData })
+    // return app.render(req, res, '/', {   })
   })
+
+  server.get('/cs', (req, res) => {
+    // const itemData = api.getItem()
+    return app.render(req, res, '/cs', { })
+  })
+
+  server.get('/accessibility', (req, res) => {
+    // const itemData = api.getItem()
+    // app.render(req, res, '/cs', { itemData })
+    app.render(req, res, '/accessibility', { })
+  })
+
+  server.get('/thankyou', (req, res) => {
+    // const itemData = api.getItem()
+    app.render(req, res, '/thankyou', {})
+  })  
 
   // Serve the item webpage with next.js as the renderer
   server.get('/menu', (req, res) => {
@@ -49,7 +71,8 @@ app.prepare().then(() => {
     return handle(req, res)
   })
 
-  server.listen(8000, err => {
+
+  server.listen(3000, err => {
     if (err) throw err
     console.log('> Ready on http://localhost:3000')
   })

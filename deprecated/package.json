@@ -1,0 +1,20 @@
+{
+  "name": "jupioca",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:elab-io/jupica.git",
+  "author": "Ray Huang <leoman730@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "install": "yarn build-all",
+    "next": "yarn build-firebase && cd \"src/app\" && yarn && yarn dev",
+    "preserve": "yarn build-all",
+    "serve": "firebase serve",
+    "predeploy": "yarn build-all",
+    "deploy": "cp -r src/app/static/img/* src/public/static/img/ && cp -r src/app/static/css/* src/public/static/css/ && cp -r src/app/static/js/* src/public/static/js/ && cp -r src/app/operations src/functions/  && cp -r src/app/data src/functions/ && firebase deploy",
+    "build-all": "yarn build-next && yarn build-firebase",
+    "build-next": "cd \"src/app\" && yarn && yarn build",
+    "build-firebase": "cd \"src/functions\" && yarn",
+    "build-css": "cd \"src/app/static\" && yarn && gulp watch"
+  }
+}

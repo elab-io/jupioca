@@ -1,0 +1,552 @@
+{
+  "menu": [
+    {
+      "id": "C1",
+      "group-name": "Fruit Tea",
+      "n2": "鲜果茶",
+      "default": true,
+      "imgs": [
+        {
+          "img": "classic_fruit_tea.jpg"
+        }
+      ],
+      "group-items": [
+        {
+          "title": "Fresh Dragon Fruit Tea(with Cheese Foam)",
+          "n2": "芝士红龙果",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "585",
+          "price": "$8.75",
+          "image": "/static/img/moge/sample2.jpg"
+        },
+
+        {
+          "title": "Fresh Watermelon Tea",
+          "n2": "满杯西瓜",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$6.00",
+          "image": "/static/img/moge/sample2.jpg"
+        },
+        {
+          "title": "Super Fruit Green Tea",
+          "n2": "超级水果绿",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$6.00",
+          "image": "/static/img/moge/sample2.jpg"
+        },
+        {
+          "title": "Fresh Lemon Four Season Oolong Tea",
+          "n2": "爆柠四季春",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$5.50",
+          "image": "/static/img/moge/sample2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "group-name": "Milk Tea",
+      "n2": "脏脏茶",
+      "imgs": [
+        {
+          "img": "dirty-milk3.png"
+        }
+      ],
+      "group-items": [
+        {
+          "title": "Brown Sugar Bubble Milk Shake",
+          "n2": "黑糖珍珠脏脏奶",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$5.25",
+          "image": "/static/img/moge/sample2.jpg"
+        },
+        {
+          "title": "Purple Sweet Potato Bubble Milk Shake",
+          "n2": "紫薯珍珠脏脏奶",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$4.75",
+          "image": "/static/img/moge/sample2.jpg"
+        },
+        {
+          "title": "Taro Bubble Milk Shake",
+          "n2": "鲜芋珍珠脏脏奶",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$4.75",
+          "image": "/static/img/moge/sample2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "group-name": "Dirty Milk",
+      "n2": "任性杯",
+      "imgs": [
+        {
+          "img": "jpg"
+        }
+      ],
+      "group-items": [
+        {
+          "title": "Super Strawberry Parfait",
+          "n2": "任性草莓杯",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$7.00",
+          "image": "/static/img/moge/sample2.jpg"
+        },
+        {
+          "title": "Super Mango Parfait",
+          "n2": "任性芒果杯",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$7.00",
+          "image": "/static/img/moge/sample2.jpg"
+        },
+        {
+          "title": "Super Kiwi Parfait",
+          "n2": "任性奇异果杯",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$7.00",
+          "image": "/static/img/moge/sample2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "group-name": "Yummy Souffle",
+      "n2": "辅料",
+      "imgs": [
+        {
+          "img": "jpg"
+        }
+      ],
+      "group-items": [
+        {
+          "title": "Cheese",
+          "n2": "芝士",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$0.70",
+          "image": "/static/img/moge/sample2.jpg"
+        },
+        {
+          "title": "Cream Brulee",
+          "n2": "蛋糕酱",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$0.60",
+          "image": "/static/img/moge/sample2.jpg"
+        },
+        {
+          "title": "White Bubble",
+          "n2": "寒天晶球",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$0.60",
+          "image": "/static/img/moge/sample2.jpg"
+        }
+      
+      ]
+    },
+    {
+      "id": "C5",
+      "group-name": "Cheese Tea",
+      "n2": "草莓系列3.0",
+      "imgs": [
+        {
+          "img": "jpg"
+        }
+      ],
+      "group-items": [
+        {
+          "title": "Fresh Berry Tea (with Cheese Form)",
+          "n2": "芝士莓莓",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$6.50",
+          "image": "/static/img/moge/sample2.jpg"
+        },
+        {
+          "title": "Fresh Berry Tea",
+          "n2": "满杯莓莓",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$6.00",
+          "image": "/static/img/moge/sample2.jpg"
+        },
+        {
+          "title": "Fresh Strawberry Tea (with Cheese Form)",
+          "n2": "芝士草莓",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$6.50",
+          "image": "/static/img/moge/sample2.jpg"
+        },
+        {
+          "title": "Fresh Strawberry Tea",
+          "n2": "满杯草莓",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+          "calories": "100-300",
+          "price": "$6.00",
+          "image": "/static/img/moge/sample2.jpg"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "group-name": "all",
+      "group-items": []
+    },
+    {
+      "group-name": "New York",
+      "default": true,
+      "group-items": [
+        {
+          "id": "001",
+          "title": "Flushing Location",
+          "address": "38-03 Main St, Flushing, NY 11354",
+          "hours": {
+            "Mon": "8:00 AM - 9:00 PM",
+            "Tue": "8:00 AM - 9:00 PM",
+            "Wend": "8:00 AM - 9:00 PM",
+            "Thur": "8:00 AM - 9:00 PM",
+            "Fri": "8:00 AM - 9:00 PM",
+            "Sat": "8:00 AM - 9:00 PM",
+            "Sun": "8:00 AM - 9:00 PM"
+          },
+          "phone": "(212) 531-2222",
+          "cs": false,
+          "social": {
+            "yelp": "https://www.yelp.com/biz/moge-tee-flushing",
+            "facebook": "https://www.facebook.com/Mogeteeusa/",
+            "instagram": "https://www.instagram.com/mogeteeusa/"
+          }
+        },
+        {
+          "id": "002",
+          "title": "Chinatown",
+          "address": "90 Canal St, New York, NY 10002",
+          "hours": {
+            "Mon": "8:00 AM - 9:00 PM",
+            "Tue": "8:00 AM - 9:00 PM",
+            "Wend": "8:00 AM - 9:00 PM",
+            "Thur": "8:00 AM - 9:00 PM",
+            "Fri": "8:00 AM - 9:00 PM",
+            "Sat": "8:00 AM - 9:00 PM",
+            "Sun": "8:00 AM - 9:00 PM"
+          },
+          "phone": "(212) 531-6688",
+          "cs": false,
+          "social": {
+            "yelp": "https://www.yelp.com/biz/möge-tee-new-york-2?osq=moge+tee",
+            "facebook": "https://www.facebook.com/Mogeteeusa/",
+            "instagram": "https://www.instagram.com/mogeteeusa/"
+          }
+        },
+        {
+          "id": "003",
+          "title": "Manhanttan",
+          "address": "69 Cooper Sq, New York, NY 10003",
+          "hours": {
+            "Mon": "8:00 AM - 9:00 PM",
+            "Tue": "8:00 AM - 9:00 PM",
+            "Wend": "8:00 AM - 9:00 PM",
+            "Thur": "8:00 AM - 9:00 PM",
+            "Fri": "8:00 AM - 9:00 PM",
+            "Sat": "8:00 AM - 9:00 PM",
+            "Sun": "8:00 AM - 9:00 PM"
+          },
+          "phone": "(212) 531-1110",
+          "cs": false,
+          "social": {
+            "yelp": "https://www.yelp.com/biz/moge-tee-new-york-3?osq=moge+tee",
+            "facebook": "",
+            "instagram": "https://www.instagram.com/mogetee_eastvillage/"
+          }
+        },
+        {
+          "id": "004",
+          "title": "Astoria",
+          "address": "30-58 Steinway St, Astoria, NY 11103",
+          "hours": {
+            "Mon": "8:00 AM - 9:00 PM",
+            "Tue": "8:00 AM - 9:00 PM",
+            "Wend": "8:00 AM - 9:00 PM",
+            "Thur": "8:00 AM - 9:00 PM",
+            "Fri": "8:00 AM - 9:00 PM",
+            "Sat": "8:00 AM - 9:00 PM",
+            "Sun": "8:00 AM - 9:00 PM"
+          },
+          "phone": "(212) 531-1110",
+          "cs": false,
+          "social": {
+            "yelp": "https://www.yelp.com/biz/moge-tee-astoria-astoria?osq=moge+tee",
+            "facebook": "https://www.facebook.com/Mogeteeusa/",
+            "instagram": "https://www.instagram.com/mogeteeastoria2019/"
+          }
+        },
+        {
+          "id": "005",
+          "title": "Midtown",
+          "address": "302 W 39th St, New York, NY 10018",
+          "hours": {
+            "Mon": "8:00 AM - 9:00 PM",
+            "Tue": "8:00 AM - 9:00 PM",
+            "Wend": "8:00 AM - 9:00 PM",
+            "Thur": "8:00 AM - 9:00 PM",
+            "Fri": "8:00 AM - 9:00 PM",
+            "Sat": "8:00 AM - 9:00 PM",
+            "Sun": "8:00 AM - 9:00 PM"
+          },
+          "phone": "(212) 531-1110",
+          "cs": false,
+          "social": {
+            "yelp": "https://www.yelp.com/biz/moge-tee-new-york-4?osq=moge+tee",
+            "facebook": "https://www.facebook.com/Mogeteeusa/",
+            "instagram": "https://www.instagram.com/mogeteeusa/"
+          }
+        },
+        {
+          "id": "006",
+          "title": "Uptown",
+          "address": "705 59th St, Unit D, Brooklyn, NY 11220",
+          "hours": {
+            "Mon": "8:00 AM - 9:00 PM",
+            "Tue": "8:00 AM - 9:00 PM",
+            "Wend": "8:00 AM - 9:00 PM",
+            "Thur": "8:00 AM - 9:00 PM",
+            "Fri": "8:00 AM - 9:00 PM",
+            "Sat": "8:00 AM - 9:00 PM",
+            "Sun": "8:00 AM - 9:00 PM"
+          },
+          "phone": "(212) 531-1110",
+          "cs": false,
+          "social": {
+            "yelp": "https://www.yelp.com/biz/moge-tee-brooklyn-2?osq=moge+tee",
+            "facebook": "https://www.facebook.com/Mogeteeusa/",
+            "instagram": "https://www.instagram.com/mogeteeusa/"
+          }
+        },
+        {
+          "id": "007",
+          "title": "Long Island City",
+          "address": "42-32 Crescent St, Long Island City, NY 11101",
+          "hours": {
+            "Mon": "8:00 AM - 9:00 PM",
+            "Tue": "8:00 AM - 9:00 PM",
+            "Wend": "8:00 AM - 9:00 PM",
+            "Thur": "8:00 AM - 9:00 PM",
+            "Fri": "8:00 AM - 9:00 PM",
+            "Sat": "8:00 AM - 9:00 PM",
+            "Sun": "8:00 AM - 9:00 PM"
+          },
+          "phone": "(212) 531-1110",
+          "cs": false,
+          "social": {
+            "yelp": "https://www.yelp.com/biz/m%C3%B6ge-tee-long-island-city?osq=moge+tee",
+            "facebook": "https://www.facebook.com/Moge-Tee-Long-Island-City-1957370507723045/",
+            "instagram": "https://www.instagram.com/mogeteelic/"
+          }
+        },
+        {
+          "id": "008",
+          "title": "Midtown",
+          "address": "275 5th Ave New York, NY 10016",
+          "hours": {
+            "Mon": "8:00 AM - 9:00 PM",
+            "Tue": "8:00 AM - 9:00 PM",
+            "Wend": "8:00 AM - 9:00 PM",
+            "Thur": "8:00 AM - 9:00 PM",
+            "Fri": "8:00 AM - 9:00 PM",
+            "Sat": "8:00 AM - 9:00 PM",
+            "Sun": "8:00 AM - 9:00 PM"
+          },
+          "phone": "(212) 531-1110",
+          "cs": false,
+          "social": {
+            "yelp": "https://www.yelp.com/biz/m%C3%B6ge-tee-new-york-10?osq=moge+tee",
+            "facebook": "https://www.facebook.com/Mogeteeusa/",
+            "instagram": "https://www.instagram.com/mogeteeusa/"
+          }
+        },
+        {
+          "id": "009",
+          "title": "W 86TH ST",
+          "address": "168 Bleecker St New York, NY 10012",
+          "hours": {
+            "Mon": "8:00 AM - 9:00 PM",
+            "Tue": "8:00 AM - 9:00 PM",
+            "Wend": "8:00 AM - 9:00 PM",
+            "Thur": "8:00 AM - 9:00 PM",
+            "Fri": "8:00 AM - 9:00 PM",
+            "Sat": "8:00 AM - 9:00 PM",
+            "Sun": "8:00 AM - 9:00 PM"
+          },
+          "phone": "(212) 531-1110",
+          "cs": true,
+          "social": {
+            "yelp": "",
+            "facebook": "https://www.facebook.com/Mogeteeusa/",
+            "instagram": "https://www.instagram.com/mogeteeusa/"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Washington DC",
+      "group-items": [
+        {
+          "id": "0010",
+          "title": "W 86TH ST",
+          "address": "2428 Wisconsin Ave, NW Washington, DC 20007",
+          "hours": {
+            "Mon": "8:00 AM - 9:00 PM",
+            "Tue": "8:00 AM - 9:00 PM",
+            "Wend": "8:00 AM - 9:00 PM",
+            "Thur": "8:00 AM - 9:00 PM",
+            "Fri": "8:00 AM - 9:00 PM",
+            "Sat": "8:00 AM - 9:00 PM",
+            "Sun": "8:00 AM - 9:00 PM"
+          },
+          "phone": "(212) 531-1110",
+          "cs": false,
+          "social": {
+            "yelp": "https://www.yelp.com/biz/moge-tee-dc-washington-3?osq=moge+tee",
+            "facebook": "https://www.facebook.com/mogeteedc/",
+            "instagram": "https://www.instagram.com/mogeteedmv/"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Virginia",
+      "group-items": [
+        {
+          "id": "0011",
+          "title": "W 86TH ST",
+          "address": "6122-B Arlington Blvd, Falls Church, VA 22044",
+          "hours": {
+            "Mon": "8:00 AM - 9:00 PM",
+            "Tue": "8:00 AM - 9:00 PM",
+            "Wend": "8:00 AM - 9:00 PM",
+            "Thur": "8:00 AM - 9:00 PM",
+            "Fri": "8:00 AM - 9:00 PM",
+            "Sat": "8:00 AM - 9:00 PM",
+            "Sun": "8:00 AM - 9:00 PM"
+          },
+          "phone": "(212) 531-1110",
+          "cs": false,
+          "social": {
+            "yelp": "https://www.yelp.com/biz/m%C3%B6ge-tee-falls-church-va-falls-church-2?osq=moge+tee",
+            "facebook": "https://www.facebook.com/mogeteeva/",
+            "instagram": "https://www.instagram.com/mogeteedmv/"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Maryland",
+      "group-items": [
+        {
+          "id": "0012",
+          "title": "W 86TH ST",
+          "address": "7101 Democracy Blvd Bethesda, MD 20817",
+          "hours": {
+            "Mon": "8:00 AM - 9:00 PM",
+            "Tue": "8:00 AM - 9:00 PM",
+            "Wend": "8:00 AM - 9:00 PM",
+            "Thur": "8:00 AM - 9:00 PM",
+            "Fri": "8:00 AM - 9:00 PM",
+            "Sat": "8:00 AM - 9:00 PM",
+            "Sun": "8:00 AM - 9:00 PM"
+          },
+          "phone": "(212) 531-1110",
+          "cs": false,
+          "social": {
+            "yelp": "https://www.yelp.com/biz/moge-tee-montgomery-mall-bethesda?osq=moge+tee",
+            "facebook": "https://www.facebook.com/mogeteemontgomerymall/",
+            "instagram": "https://www.instagram.com/mogeteedmv/"
+          }
+        }
+      ]
+    },
+    {
+      "group-name": "Pennsylvania",
+      "group-items": [
+        {
+          "id": "0013",
+          "title": "W 86TH ST",
+          "address": "1025 Arch St Philadelphia, PA 19107",
+          "hours": {
+            "Mon": "8:00 AM - 9:00 PM",
+            "Tue": "8:00 AM - 9:00 PM",
+            "Wend": "8:00 AM - 9:00 PM",
+            "Thur": "8:00 AM - 9:00 PM",
+            "Fri": "8:00 AM - 9:00 PM",
+            "Sat": "8:00 AM - 9:00 PM",
+            "Sun": "8:00 AM - 9:00 PM"
+          },
+          "phone": "(212) 531-1110",
+          "cs": false,
+          "social": {
+            "yelp": "https://www.yelp.com/biz/moge-tee-philadelphia?osq=moge+tee",
+            "facebook": "https://www.facebook.com/mogeteephilly-100107848003050/",
+            "instagram": "https://www.instagram.com/mogeteephilly/"
+          }
+        }
+      ]
+    }
+  ],
+  "gallery": [
+        {
+          "id": "001",
+          "caption": "First Picture",
+          "t1": "Valentine's Day",
+          "t2": "Yummy",
+          "img": "https://mogeteeusa.com/static/Cheese-Tea-2.jpg"
+        },
+        {
+          "id": "002",
+          "caption": "Second Picture",
+          "t1": "Christmas Day",
+          "t2": "Sweet!",
+          "img": "https://mogeteeusa.com/static/g1.jpg"
+        },
+        {
+          "id": "003",
+          "caption": "Third Picture",
+          "t1": "Thanksigiving",
+          "t2": "Giving Day",
+          "img": "https://mogeteeusa.com/static/g2.jpg"
+        },
+        {
+          "id": "004",
+          "caption": "Fourth Picture",
+          "t1": "Labor Day",
+          "t2": "Labor Day",
+          "img": "https://mogeteeusa.com/static/g5.jpg"
+        },
+        {
+          "id": "005",
+          "caption": "Fifth Picture",
+          "t1": "July 4th",
+          "t2": "July 4th",
+          "img": "https://mogeteeusa.com/static/3.jpg"
+        },       
+        {
+          "id": "006",
+          "caption": "Six Picture",
+          "t1": "Drink",
+          "t2": "Tasty",
+          "img": "https://mogeteeusa.com/static/1.jpg"
+        }
+  ]
+}
