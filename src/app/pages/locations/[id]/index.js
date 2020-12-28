@@ -31,7 +31,7 @@ var locations = {};
 function Store ({store, site_data}) {
   const router = useRouter()
   const { id } = router.query
-console.log(store.meta);
+// console.log(store.meta);
   function UpdateMasterHeadBackground() {    
     if(store.store_pic) {
       var master_head = document.getElementsByClassName('masthead')[0];
@@ -62,97 +62,8 @@ console.log(store.meta);
   }
 
 
-  function AddOperationInfo() {
-    
-    var about_section = document.getElementById('about');
-   
-    if(about_section) {
-      let hour_list = Object.keys(store.hours).map((index) => {
-        return (
-          <li key={index}>{index}: {store.hours[index]}</li>
-        )
-      });
-
-      var store_description = null;
-      if(store.description) {
-        store_description = (
-          <div className="description">
-            { parse(store.description) }
-          </div>
-        );
-      }
-
-      var operate_hours = (
-        <div className="hours">
-          Open Hours:<br />
-          { React.createElement("ul", {className: "hours"}, hour_list) }
-          <br />
-        </div>
-      );
-
-      var store_address = (
-        <div className="storeAddress">
-          {store.title}<br />
-          {store.address}<br />
-          {store.phone}<br /><br />
-        </div>   
-      );
-
-      var socials = null;
-      if(Object.keys(store.social).length > 0) {
-        let social_list = Object.keys(store.social).map((index) => {
-          return (
-            <li key={index}><a target="_blank" aria-label="Link to social media" href={store.social[index]}><i className={"fab fa-" + index}></i></a></li>
-          )
-        });        
-        socials = React.createElement("ul", {className: "socials-links"}, social_list);
-      } 
-
-      var order_now = null;
-      if(store.order_now) {
-        order_now = (
-          <a href={store.order} rel="noopener" className="btn btn-primary btn-lg" role="button">Order Now</a>
-        )
-      }
-
-
-
-      const content_markup = (
-        <>
-        <div className="container">
-          <div className="text-dark">
-            <div className="col-12 text-center">
-              <h2 className="text-dark mt-0">About</h2>
-              <hr className="divider dark my-4" />
-
-              <div className="row">
-
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                  <img src="/img/moge/about-us.jpg" alt="About Us" />
-                </div>
-
-                <div className="col-lg-6 col-md-12 col-sm-12 text-dark text-left about-text">
-                  {store_description} 
-                  {store_address}    
-                  {operate_hours}
-                  {socials}
-                  {order_now}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        </>
-      );
-
-
-      ReactDOM.render(
-        content_markup,
-        document.getElementById('about')
-      );
-    }
-  }
+  
+  
 
    function UpdatePageTitle() {
      let title = document.getElementsByTagName('title')[0];
@@ -160,7 +71,6 @@ console.log(store.meta);
    } 
   useEffect(() => {
     // UpdateMasterHeadBackground();
-    // AddOperationInfo();
     MakeNavScrolledEffect();
     AddMetadata();
     UpdatePageTitle();

@@ -5,7 +5,7 @@ echo "  1) Starts Next.js in development mode"
 echo "  2) Export Static HTML to {out} directory"
 echo "  3) Rebuild docker image" 
 echo "  4) Ssh into the container" 
-echo "  5) Rebuild CSS for the front-end template."
+# echo "  5) Rebuild CSS for the front-end template."
 
 read n
 case $n in
@@ -16,7 +16,6 @@ case $n in
     docker-compose up export 
     ;;
   3) 
-    # docker build --no-cache -t docker-nextjs .
     docker-compose build
     ;;
   4)

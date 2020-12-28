@@ -1,21 +1,34 @@
 import React from 'react';
 import parse from 'html-react-parser';
 
+
 class StoreInfo extends React.Component {
   constructor(props) {
     super();
     this.state = {
       store: props.data
     };
-}
-
-  displayOpenHour() {
-    return React.createElement("ul", {className: "hours"}); 
   }
+
+    getMapUrl(addrString) {
+        return "https://maps.google.com/maps?q=" + encodeURI(addrString);
+    }
+
+    hidePhone(item) {
+        /// either coming soon or phone number not avail
+        if(item["cs"] || !item["phone"]) {
+            return true;
+        }
+        return false;
+    }
+
+    displayOpenHour() {
+      return React.createElement("ul", {className: "hours"}); 
+    }
 
   render() {
     return (
-      <section className="page-section bg-secondary" id="about">
+      <section className="page-section bg-secondary" id="storeinfo">
         <div className="container">
           <div className="text-dark">
             <div className="col-12 text-center">
@@ -24,7 +37,11 @@ class StoreInfo extends React.Component {
 
               <div className="row">
                 <div className="col-lg-6 col-md-12 col-sm-12">
-                  <img src="/img/moge/about-us.jpg" alt="About Us" />
+                  {this.state.store.store_pic ?
+                    <img src={this.state.store.store_pic} alt="Store Picture" />
+                    :
+                    <img src="/img/moge/about-us.jpg" alt="Store Picture" />
+                }
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12 text-dark about-text text-left">
                   
@@ -50,18 +67,27 @@ class StoreInfo extends React.Component {
                 {
                 this.state.store.social ?
                   <div className="social">
-                    <ul>
+                    <ul className="social-links clearfix">
                       {Object.keys(this.state.store.social).map((index) => {
                         return <li key={index}><a target="_blank" aria-label="Link to social media" href={this.state.store.social[index]}><i className={"fab fa-" + index}></i></a></li>
 
                       })}
+                      <li><a className="popup-gmaps small font-italic" rel="noopener" href={this.getMapUrl(this.state.store.address)}>View Map</a></li>
                     </ul>
                   </div>
                 : null
                 }
 
+
+
               { this.state.store.order ?
-                <a href={this.state.store.order} rel="noopener" className="btn btn-primary btn-lg" role="button">Order Now</a>
+              <div className="order">
+              <ul className="order-links clearfix">
+                {Object.keys(this.state.store.order).map((index)=>{
+                  return <li key={index}><a href={this.state.store.order[index]} rel="noopener" className="btn btn-primary btn-lg" role="button">{index}</a></li>
+                })}
+                </ul>
+                </div>
                 : null
               }
 

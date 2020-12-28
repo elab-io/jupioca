@@ -34,7 +34,7 @@ class StoreNavigation extends React.Component {
               <div className="collapse navbar-collapse" id="navbarResponsive" >
                 <ul className="navbar-nav ml-auto my-2 my-lg-0">
                   <li className="nav-item" tabIndex="0">
-                    <a className="nav-link js-scroll-trigger" href="#about" tabIndex="-1">About</a>
+                    <a className="nav-link js-scroll-trigger" href="#storeinfo" tabIndex="-1">About</a>
                   </li>
                   <li className="nav-item" tabIndex="0">
                     <a className="nav-link js-scroll-trigger" tabIndex="-1" href="#shuffle-menu">Menu</a>
