@@ -29,4 +29,10 @@
     }
 }
 
-
+#appinfo {
+    @media (max-width: 992px) {
+        .appdownload {
+            margin-top: 15px    ;
+        }
+      }
+}

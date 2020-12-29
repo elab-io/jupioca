@@ -14,7 +14,7 @@ class AppInfo extends React.Component {
                 <div className="col-lg-6 col-md-6 col-sm-12">
                   <img src="/img/moge/about-us.jpg" alt="About Us" style={{ width: '100%' }} />
                 </div>
-                <div className="col-lg-6 col-md-6 col-sm-12 text-dark text-left">
+                <div className="col-lg-6 col-md-6 col-sm-12 text-dark text-left appdownload">
                   <img src="/img/app_download.png" alt="Download App" style={{ width: '30%' }} />
                 </div>
               </div>
