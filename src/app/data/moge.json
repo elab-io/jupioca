@@ -421,8 +421,7 @@
           },
           "description":"<p>This is custom text for store description.</p><p>Second line description</p>",
           "store_pic": "/img/bg-masthead.jpg",
-                    "menu":[
-          {
+          "menu":[{
             "id": "C6",
             "group-name": "Fresh Fruit Yakult",
             "n2": "鲜果多多",
