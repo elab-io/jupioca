@@ -192,7 +192,7 @@ class MenuGroup extends React.Component {
                                         }
 
                                         <div className="group-item__store-url">
-                                            <br /><a href={"/locations/"+item["store_url"]} target="_blank" rel="noopener" className="btn btn-primary btn-lg" role="button">Go to Store</a>
+                                            <br /><a href={"/location/"+item["store_url"]} target="_blank" rel="noopener" className="btn btn-primary btn-lg" role="button">Go to Store</a>
                                         </div>
 
                                     </div>
