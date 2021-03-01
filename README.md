@@ -24,7 +24,7 @@ docker run --rm -it docker-nextjs sh
 
 ## For front-end style
 
-Sping up development container, 
+Spin up development container, 
 then modify the src/app/public/scss/site.scss, then it will automatically compile.
 
 
